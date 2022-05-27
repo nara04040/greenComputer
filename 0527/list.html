@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>list</title>
+</head>
+<body>
+  <h1>리스트</h1>
+  <h2>비순차 목록 - Unordered List</h2>
+  <ul>
+    <li type="square">list item</li>
+    <li type="disc">list item</li>
+    <li type="circle">list item</li>
+    <li>list item</li>
+  </ul>
+  <hr>
+  <h2>순차목록 - order list</h2>
+  <ol start="5" type="A"> <!-- a,1,i-->
+    <li>list item</li>
+    <li>list item</li>
+    <li>list item</li>
+    <li>list item</li>
+    <li>list item</li>
+  </ol>
+  <hr>
+  <h2>정의목록 - definition list</h2>
+  <dl>
+    <dt>Definition term - 용어정의1, 제목성격</dt>
+    <dd>Definition description - 용어설명</dd>
+    <dd>Definition description - 용어설명</dd>
+    <dd>Definition description - 용어설명</dd>
+    <dd>Definition description - 용어설명</dd>
+    <dd>Definition description - 용어설명</dd>
+    <dd>Definition description - 용어설명</dd>
+    <dt>Definition term - 용어정의2, 제목성격</dt>
+    <dd>Definition description - 용어설명</dd>
+    <dd>Definition description - 용어설명</dd>
+    <dd>Definition description - 용어설명</dd>
+    <dd>Definition description - 용어설명</dd>
+    <dd>Definition description - 용어설명</dd>
+    <dd>Definition description - 용어설명</dd>
+    <dt>Definition term - 용어정의3, 제목성격</dt>
+    <dd>Definition description - 용어설명</dd>
+    <dd>Definition description - 용어설명</dd>
+    <dd>Definition description - 용어설명</dd>
+    <dd>Definition description - 용어설명</dd>
+    <dd>Definition description - 용어설명</dd>
+    <dd>Definition description - 용어설명</dd>
+  </dl>
+<!-- 
+    <p>Definition term - 용어정의1, 제목성격</p>
+    <ul>
+      <li>Definition description - 용어설명</li>
+      <li>Definition description - 용어설명</li>
+      <li>Definition description - 용어설명</li>
+      <li>Definition description - 용어설명</li>
+      <li>Definition description - 용어설명</li>
+    </ul>
+    <p>Definition term - 용어정의2, 제목성격</p>
+    <ul>
+      <li>Definition description - 용어설명</li>
+      <li>Definition description - 용어설명</li>
+      <li>Definition description - 용어설명</li>
+      <li>Definition description - 용어설명</li>
+      <li>Definition description - 용어설명</li>
+    </ul>
+    <p>Definition term - 용어정의3, 제목성격</p>
+    <ul>
+      <li>Definition description - 용어설명</li>
+      <li>Definition description - 용어설명</li>
+      <li>Definition description - 용어설명</li>
+      <li>Definition description - 용어설명</li>
+      <li>Definition description - 용어설명</li>
+    </ul> -->
+
+
+
+    <ul>
+      <a href="https://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC:%EB%8C%80%EB%AC%B8">Definition term - 용어정의1, 제목성격</a>
+      <ul>
+        <li>Definition description - 용어설명</li>
+        <li>Definition description - 용어설명</li>
+        <li>Definition description - 용어설명</li>
+        <li>Definition description - 용어설명</li>
+      </ul>
+      <li>Definition term - 용어정의2, 제목성격</li>
+      <ul>
+        <li>Definition description - 용어설명</li>
+        <li>Definition description - 용어설명</li>
+        <li>Definition description - 용어설명</li>
+        <li>Definition description - 용어설명</li>
+      </ul>
+      <li>Definition term - 용어정의3, 제목성격</li>
+      <ul>
+        <li>Definition description - 용어설명</li>
+        <li>Definition description - 용어설명</li>
+        <li>Definition description - 용어설명</li>
+        <li>Definition description - 용어설명</li>
+      </ul>
+    </ul>
+  <hr>
+  <h2>주의할점 - 잘못 사용한 사례1</h2>
+  <ul>
+    <li>list item</li>
+  </ul>
+  <ul>
+    <li>list item</li>
+  </ul>
+  <ul>
+    <li>list item</li>
+  </ul>
+  <br>
+  <h2>잘못 사용한 사례</h2>
+  <ul>
+    <h3>title</h3>  <!-- 이렇게 쓰지 마라 ul태그는 list속성이기 list만 써라 제발-->
+    <li>list item</li>
+    <li>list item</li>
+    <li>list item</li>
+    <li>list item</li>
+
+    <li><h3>title</h3>list item</li>
+    <li>list item</li>
+    <li>list item</li>
+    <li>list item</li>
+    <li>list item</li>
+  </ul>
+
+  <dl>
+    <dt>용어정의</dt>
+    <dt>용어정의</dt>
+    <dt>용어정의</dt>
+  </dl>
+
+  
+</body>
+</html>

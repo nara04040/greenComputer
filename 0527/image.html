@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>image</title>
+</head>
+<body>
+  <img src="/0527/images/레드향.jpg" alt=""> <!-- alternative = 대안-->
+  <h1>레드향</h1>
+<!--
+   gif : 표시할수 있는 색상수가 256가지여서 다른 형식에 비해 파일 크기가 작아서 아이콘이나 불릿 등 작은 이미지에 주로 사용
+   
+   jpg/jpeg : 색상과 명암을 gif보다 다양하게 표현할수 있다. 이미지를 수정하고 저장하는 작업을 반복할 경우 화질이 떨어질수있다.
+
+   png : 네트워크용으로 개발된 파일 형식이다. 색상을 다양하게 표현하면 투명한 배경도 만들수 있으므로 웹에서 가장 많이 사용된다.
+ -->
+
+ <!-- 
+   img태그의 width, height속성
+   이미지 크기 조정하기.
+   크기조정단위는 px단위이다.
+   width나 height 1개만 지정해도 나머지 속성은 원본 비율에 맞게 자동으로 비율을 계산
+ -->
+
+<p>원래 크기의 이미지</p>
+<img src="/0527/images/레드향.jpg" alt="레드향">
+
+<p>width = 50%, height = 50%로 지정한 이미지</p>
+<img src="/0527/images/레드향.jpg" alt="레드향" width="50%">
+<p>width = "150으로 지정한 이미지</p>
+
+<a href="http://naver.com"><img src="/0527/images/레드향.jpg" alt="" width="150px"></a>
+
+</body>
+</html>

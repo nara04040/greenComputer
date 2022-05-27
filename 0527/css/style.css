@@ -1,0 +1,21 @@
+thead {
+  height: 50px;
+  background-color: royalblue;
+}
+
+td {
+  text-align: center;
+}
+
+.sun {
+  color: red;
+}
+
+.sat{
+  border: 1px solid black;
+  color: blue;
+}
+
+.today {
+  background-color:rgb(249, 252, 61);
+}
