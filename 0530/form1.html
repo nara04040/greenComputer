@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form</title>
+
+  <style>
+    button{
+      padding: 0;
+      border: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!--
+   for과 id 의 관계 
+  id가 key값이 된다.
+  name : 백쪽에서 담당하는 곳? db상의 필드명
+  placeholder : 안내말
+  required : 필수사항으로 기입해주세용 아니면 다음으로 넘어가지않아용
+  minlength, maxlength : 최소,최대 글자 제한
+  get, post : 
+  select :
+  option :
+  input radio : 선택지 , 둘중 하나만 선택해야하는 경우하는방법
+  checkbox : 멀티초이스가 가능!
+  name : 변수라고 생각하면 변하다. 기억공간이라고 생각하자.
+    ex) y = 2x + 1 , x = 4라고하면 x에 해당하는것이 변수!
+  
+
+  -->
+  <h1>회원가입</h1>
+  <form action="#" method="post">
+    <fieldset>
+      <legend>사용자정보</legend>
+      <ul>
+        <li>
+          <label for="user_name">이름</label>
+          <input type="text" id="user_name" name="user_name" placeholder="이름을입력하세요" required>
+        </li>
+        <li>
+          <label for="user_id">아이디</label>
+          <input type="text" id="user_id" name="user_id" required="required" minlength="7" maxlength="12"
+            placeholder="7~12글자사이로 공백없이">
+        </li>
+        <li>
+          <label for="user_pw">비밀번호</label>
+          <input type="password" id="user_pw" name="user_pw" placeholder="문자와숫자,특수기호 포함" required>
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset>
+      <legend>부가입력</legend>
+      <div>
+        <label for="address">거주지를 입력하세요</label>
+        <select name="user_address" id="address">
+          <option value="서울시">서울시</option>
+          <option value="경기도">경기도</option>
+          <option value="제주도">제주도</option>
+          <option value="대구시">대구시</option>
+        </select>
+      </div>
+      <div>
+        <h2>성별을 선택해주세요</h2>
+        <label for="men">남성</label>
+        <input type="radio" id="men" value="남성" name="gender">
+        <label for="women">여성</label>
+        <input type="radio" id="women" value="여성" name="gender">
+      </div>
+      <div>
+        <h2>관심사항 체크</h2>
+        <label for="html">HTML</label>
+        <input type="checkbox" id="html" name="interest" value="html">
+        <label for="css">CSS</label>
+        <input type="checkbox" id="css" name="interest" value="css">
+        <label for="javascript">JavaScript</label>
+        <input type="checkbox" id="javascript" name="interest" value="javascript">
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>HTML5 새로운 타입</legend>
+      <div for="website">website
+      <input type="url" id="website" name="website">
+    </div>
+    <div>
+      <label for="birthday">생년월일</label>
+      <input type="date" id="birthday" name="birthday">
+    </div>
+    <div>
+      <label for="sksm">학습할 언어 선택</label>
+      <input id="sksm" name="sksm" list="mylist">
+      <datalist id="mylist">
+        <option value="html">html</option>
+        <option value="css">css</option>
+        <option value="javascript">javascript</option>
+      </datalist>
+    </div>
+    <div>
+      <label for="career">경력기간</label>
+      <input type="number" id="career" name="career" min="0" max="15" value="1" step="2">
+    </div>
+    <div>
+      <label for="language">학습언어 선택</label>
+      <select name="language" id="language">
+        <optgroup label="font_end" style="color:wheat">
+          <option value="html">html</option>
+          <option value="css">css</option>
+          <option value="javascript">javascript</option>
+        </optgroup>
+        <optgroup label="back_end" style="color:violet">
+          <option value="asp">asp</option>
+          <option value="jsp">jsp</option>
+          <option value="php">php</option>
+        </optgroup>
+      </select>
+    </div>
+    <div>
+      <label for="user_email">이메일</label>
+      <input type="text" id="user_email" name="user_email">@
+      <select title="이메일 서비스 선택" >
+        <option value="직접입력">직접입력</option>
+        <option value="naver.com">naver.com</option>
+        <option value="hanmail.net">hanmail.net</option>
+        <option value="gmail.com">gmail.com</option>
+      </select>
+    </div>
+    <div>
+      <label for="opinion">남기고싶은말</label>
+      <textarea name="opinion" id="opinion" cols="30" rows="3" placeholder="하고싶은 말"></textarea>
+    </div>
+    </fieldset>
+
+    <input type="submit" value="전송">
+    <button type="submit">전송</button>
+    <button><img src="/0530/image/16-client-cat_icon-icons.com_76692.png" alt=""></button>
+    <input type="image" src="/0530/image/16-client-cat_icon-icons.com_76692.png">
+  </form>
+
+
+</body>
+
+</html>

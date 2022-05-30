@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form</title>
+</head>
+<body>
+  <!-- 
+• 사용자로부터 사용자의 정보를 입력받는 양식을 폼이라고한다. 
+• 회원가입, 로그인, 검색, 메시지 전송, 구매, 결제, 구독신청
+• 사용자가 웹 사이트로 정보를 보낼 수 있는 요소들은 모두 폼(form)
+• 폼과 관련된 대부분의 작업들은 정보를 저장하거나 검색하거나 수정하는 일들
+• 이런 작업은 모두 데이터베이스를 기반으로 한다.
+• 아이디를 입력하는 텍스트 필드나 버튼 같은 폼의 형태를 만드는 것은 HTML 태그
+• 폼에 입력한 사용자 정보를 처리하는 것은 ASP나 PHP 같은 서버 프로그래밍 이용 -->
+<form action="">
+  <fieldset>
+    <legend>
+      상품선택
+    </legend>
+  </fieldset>
+  <fieldset>
+    <legend>
+      배송정보
+    </legend>
+  </fieldset>
+  <label for="user_id">아이디(6자이상)</label>
+  <input type="text" id="user_id">
+<br>
+  <hr>
+
+</form>
+<!-- 배송정보 입력하는 폼 만들기 -->
+<ul>
+  <li>
+    <label for="user-name">이름</label>
+    <input type="text" id="user-name">
+  </li>
+  <li>
+    <label for="addr">배송 주소</label>
+    <input type="text" id="addr">
+  </li>
+  <li>
+    <label for="mail">이메일</label>
+    <input type="text" id="mail">
+  </li>
+  <li>
+    <label for="phone">연락처</label>
+    <input type="tel" id="phone">
+  </li>
+</ul>
+
+<br><hr>
+<fieldset>
+  <legend>상품 선택</legend>
+  <p><b>주문할 상품을 선택해 주세요.</b></p>
+  <label><input type="checkbox" value="s_3">선물용 3kg</label>
+  <label><input type="checkobx" value="s_5">선물용 5kg</label>
+  <label><input type="checkobx" value="f_3">가정용 3kg</label>
+  <label><input type="checkobx" value="f_5">가정용 5kg</label>
+  <p><b>포장선택</b></p>
+  <label><input type="radio" name="gift" value="yes">선물포장</label>
+  <label><input type="radio" name="gift" value="no">선물포장 안함</label>
+</fieldset>
+</body>
+</html>

@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-size;
+}
+
+ul {
+  list-style: none;
+}
+
+img{
+  display: block;
+  
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+p {
+  background-color: forestgreen;
+}
+
+h1 {
+  background: yellow;
+  color: red;
+}

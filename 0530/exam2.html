@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exam2</title>
+
+</head>
+
+<body>
+  <h1>레드향 주문하기</h1>
+  <fieldset>
+    <legend><b>상품 선택</b></legend>
+    <p>주문할 상품을 선택해 주세요</p>
+    <div class="present_box">
+      <input type="checkbox" id="present_3kg" name="present_3kg"> 선물용 3kg
+      <input type="number" id="present_num" name="present_num" min="0" max="5" value="1">개<small>(최대 5개)</small>
+    </div>
+    <div class="present_box">
+      <input type="checkbox" id="present_5kg" name="present_5kg"> 선물용 5kg
+      <input type="number" id="present_num" name="present_num" min="0" max="5" value="1">개 <small>(최대 3개)</small>
+    </div>
+    <div class="present_box">
+      <input type="checkbox" id="home_3kg" name="home_3kg"> 가정용 3kg
+      <input type="number" id="present_num" name="present_num" min="0" max="5" value="1">개<small>(최대 5개)</small>
+    </div>
+    <div class="present_box">
+      <input type="checkbox" id="home_5kg" name="home_5kg"> 가정용 5kg
+      <input type="number" id="present_num" name="present_num" min="0" max="5" value="1">개<small>(최대 3개)</small>
+    </div>
+    <p>포장 선택</p>
+    <div class="present_box">
+      <input type="radio" id="presenting" value="presenting" name="presenting">
+      <label for="선물포장">선물포장</label>
+    </div>
+    <div class="present_box">
+      <input type="radio" id="presenting" value="presenting" name="presenting">
+      <label for="선물포장">선물포장 안 함</label>
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend><b>배송 정보</b></legend>
+    <div>
+      <label class="label_name">이름</label>
+      <input type="text" id="user_name" name="name">
+    </div>
+    <div>
+      배송 주소
+      <input type="text" id="user_addre" name="addre">
+    </div>
+    <div>
+      <label for="email">이메일</label>
+      <input type="text" id="user_email" name="email">
+    </div>
+    <div>
+      <label for="number">연락처</label>
+      <input type="text" id="user_number" name="number">
+    </div>
+    <div class="shipping">
+      <label for="배송지정">배송 지정</label>
+      <input type="date" id="shipping_date"> (주문일로부터 최소 3일 이후)
+    </div>
+    <div>
+      <label for="memo">메모</label>
+      <textarea name="memo" id="memo" cols="40" rows="4"></textarea>
+    </div>
+  </fieldset>
+  <button>주문하기</button>
+  <button>취소하기</button>
+</body>
+
+</html>
