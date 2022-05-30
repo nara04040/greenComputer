@@ -4,7 +4,7 @@
   box-sizing: border-size;
 }
 
-ul {
+ol, ul {
   list-style: none;
 }
 
@@ -18,11 +18,43 @@ a {
   text-decoration: none;
 }
 
-p {
-  background-color: forestgreen;
-}
-
 h1 {
   background: yellow;
   color: red;
 }
+
+p {
+  background: forestgreen !important;
+}
+
+p {
+  background: chocolate;
+}
+
+#desc2 {
+  background: yellow;
+}
+
+.desc1 {
+  background: brown;
+  font-family: Arial,sans-serif
+}
+
+/* 부모태그 + 자식태그임으로 우선순위를 준다 */
+ul li {
+  color: blue;
+}
+
+li{
+  color: red;
+  font-weight: bold;
+  font-family: 'Blaka', cursive;
+}
+
+
+
+/* 
+css 우선순위
+타입 < 클래스 < id < inline< !important이다!!
+* < tag < class < id < inline style < !important
+*/
