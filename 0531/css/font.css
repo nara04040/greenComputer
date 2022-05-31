@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Caveat-Bold';
+  src: url("../fonts/Caveat/Caveat-Bold.woff") format('woff'),
+    url('fonts/Poppins/font_ttf/Poppins-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Caveat-Regular';
+  src: url("../fonts/Caveat/Caveat-Regular.woff") format('woff'),
+    url("fonts/Caveat/Caveat-Regular.ttf") format('woff'), ;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Kanit-Bold';
+  src: url("../fonts/Kanit/Kanit-Bold.woff") format('woff'),
+    url("fonts/Kanit/Kanit-Bold.ttf") format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Kanit-Regular';
+  src: url("../fonts/Kanit/Kanit-Regular.woff") format('woff'),
+    url("fonts/Kanit/Kanit-Regular.ttf") format('truetype'), ;
+  font-style: normal;
+  font-weight: 400;
+}

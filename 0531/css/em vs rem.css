@@ -1,0 +1,28 @@
+@charset 'utf-8';
+
+body {
+  font-size: 1em;
+  color: green;
+  border: 2px solid green;
+}
+.gra {
+  font-size: 2em;
+  border: 2px solid red;
+}
+.fa {
+  font-size: 2em;
+  border: 2px solid blue;
+}
+.son {
+  font-size: 2em;
+  border: 2px solid gold;
+}
+.gfa-rem {
+  font-size: 2rem;
+}
+.fa-rem {
+  font-size: 2rem;
+}
+.son-rem {
+  font-size: 1.5rem;
+}

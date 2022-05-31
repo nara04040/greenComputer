@@ -1,0 +1,43 @@
+html {
+  margin :  5px 10px 20px 5px;
+}
+
+h2 ,p {
+  margin: 3px;
+  padding: 0;
+}
+
+table, tr {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 640px;
+  height: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+span {
+  color: blue;
+}
+.main_image {
+  display: block;
+  margin: 0 auto;
+  
+}
+.title {
+  font-weight: bold;
+}
+
+.table_subtitle {
+  background-color: black;
+  height: 50px;
+}
+.table_subtitle:nth-child(1) {
+  color: white;
+  text-align: center;
+  font-size: 15px;
+}
+.order {
+  color: red;
+}

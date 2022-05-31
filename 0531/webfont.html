@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <title>webfont</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+    @font-face {
+      font-family: 'Poppins-Bold';
+      src: url(/0531/fonts/Poppins/font_woff/Poppins-Bold.woff2) format('woff2'),
+      url('fonts/Poppins/font_woff/Poppins-Bold.woff') format('woff'),
+      url('fonts/Poppins/font_ttf/Poppins-Bold.ttf') format('truetype');
+      font-style: normal;
+      font-weight: 700;
+    }
+    @font-face {
+      font-family: 'Poppins-Regular';
+      src: url("fonts/Poppins/font_woff/Poppins-Regular.woff2") format('woff2'),
+      url("fonts/Poppins/font_woff/Poppins-Bold.woff") format('woff'),;
+      font-style: normal;
+      font-weight: 400;
+    }
+    @font-face {
+      font-family: "Nanum Myeongjo-Bold";
+      src: url("fonts/NanuMyeongjo/woff/NanumMyeongjoBold.woff") format("woff"),
+      url("fonts/NanuMyeongjo/NanumMyeongjo-Bold.ttf") format('truetype');
+      font-style: normal;
+      font-weight: 700;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+
+    .wfont{
+      font-family: 'Poppins-Bold', sans-serif;
+    }
+    .poppins {
+      font-family: 'Poppins-Regular', sans-serif;
+    }
+    .lang {
+      font-family: 'Nanum Myeongjo-bold', serif;
+    }
+  </style>
+</head>
+
+<body>
+  <p>Using Default Fonts</p>
+  <p class="wfont">Using Default Fonts</p>
+  <p class="poppins">Using Default Fonts</p>
+  <p class="lang">Using Default Fonts</p>
+</body>
+
+</html>
