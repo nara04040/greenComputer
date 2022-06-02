@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* div {
+      border-width: 1px;
+      border-color: black;
+      border-style: solid;
+      width: 100px; height: 100px;
+    } */
+    
+
+    * { margin: 0; padding: 0; box-sizing: border-box;}
+    div {width: 180px; height: 180px; background-color: red; border-color: black; border-style: solid; border-width: 10px; margin: 10px; float: left;}
+    #dotted_box_div {border-color: green; border-style: dotted;}
+    #double_box_div {border-color: black; border-style: double;}
+    #dashed_box_div {border-color: blue; border-style: dashed;}
+    #none_box_div {border: none;}
+
+  </style>
+</head>
+<body>
+  <!-- border-style
+  4개방향 = 시계방향으로 위 오른쪽 밑 왼쪽으로 
+  none, hidden dashed dotted double groove inset outset ridge solid
+  -->
+
+  <!-- border-width 
+     thin, medium , thick이 있다.
+   -->
+
+  <!--  border-color :
+    테두리 색상을 지정가능
+    -->
+
+  <!-- border속성 :
+  테두리 스타일과 두께, 색상 등을 묶어 표기
+  border-top이나 border-right처럼 방향을 함께 써서 4개 방향의 스타일을 따로 지정할 수 있음
+  순서는 상관없음
+
+  -->
+
+  <!-- border-radius속성 :
+   박스 모델의 테두리를 둥글게 처리
+   박스 모델의 꼭짓점 부분에 원(반지름 r)이 있다고 가정해서 둥글게 처리
+  -->
+  
+<div>
+  border-style : solid; <br>
+  border-color : black;
+</div>
+<div id="dotted_box_div">
+  border-style : dotted; <br>
+  border-color : green;
+</div>
+<div id="double_box_div">
+  border-style : double; <br>
+  border-color : black;
+</div>
+<div id="dashed_box_div">
+  border-style : dashed; <br>
+  border-color : blue;
+</div>
+<div id="none_box_div">
+  border-style : none;
+</div>
+</body>
+</html>
