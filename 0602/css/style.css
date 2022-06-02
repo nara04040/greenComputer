@@ -1,0 +1,63 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  width: 100%;
+}
+
+h2, p {
+  margin: 10px;
+}
+li {
+  margin-left: 50px;
+}
+#container{
+  width: 600px;
+  margin: 20px auto;
+}
+.description{
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border: 1px solid gainsboro;
+  padding: 15px 13px 20px 20px;
+  margin-bottom: 20px;
+}
+.receipe{
+  border: 1px solid gainsboro;
+  padding: 15px 13px 20px 20px;
+  font-size: 15px;
+  margin-bottom: 20px;
+
+}
+.package {
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border: 1px solid gainsboro;
+  padding: 15px 100px 20px 20px;
+
+}
+table{
+  width: 100%;
+  border: 1px solid gainsboro;
+  border-collapse: collapse;
+}
+th {
+  border: 1px solid gainsboro;
+  padding: 10px 0px;
+  
+}
+td {
+  border: 1px solid gainsboro;
+  padding: 10px 0px 15px 10px;
+}
+.tr-head {
+  background-color: ghostwhite;
+  text-align: center;
+  padding-left: 0;
+}
+#table-title {
+  width: 200px;
+  
+}
