@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{padding: 0; margin: 0; box-sizing: border-box;}
+    /* .container{
+      padding: 10px;
+      width: 600px;
+      height: 300px;
+      margin: 0 auto;
+      border: 1px solid green;
+    }
+    .meat {
+      display: block;
+      float: left;
+      width: 400px;
+      height: 250px;
+      margin: 5px;
+    }
+    .prev_but{
+      text-decoration : none;
+      width: 30px;
+      height: 30px;
+      background-color: skyblue;
+    } */
+    .container{
+      width: 800px;
+      height: 330px;
+      padding: 10px;
+      margin: 0 auto;
+      border: 2px solid green;
+      position: relative;
+    }
+    .container img {
+      float: left;
+      margin-right: 10px;
+    }
+    .container a {
+      display: block;
+      background-color: #333;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      line-height: 50px;
+      position: absolute;
+      top: 50%;
+      white-space: nowrap; /*줄넘김 하지마라*/
+    }
+    .Prev_but{
+      right: 100%;
+      
+    }
+    .Next_but {
+      left: 100%;
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="image/KakaoTalk_20220603_174752932.jpg" alt="" class="meat">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, itaque fugit dolor vel harum cupiditate ab temporibus alias nemo modi perspiciatis quas eligendi error sunt quos placeat rerum consequuntur? Earum!</p>
+    <div class="controls">
+    <a href="" class="Prev_but">Prev project</a>
+    <a href="" class="Next_but">Next project</a>
+  </div>
+  </div>
+</body>
+</html>
