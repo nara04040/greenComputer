@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.">
+  <title>absolute</title>
+  <style>
+    /*position absolute :
+    display:flex를 안쓰는 이유 : 익스플로러에서 안돌아가기때문
+    1. 적용된 요소는 아무도 알아보지 못한다. (붕뜬다.)
+    2. 적용된 요소의 크기는 내용의 크기만큼 자동으로 인지된다. (인라인 요소도 absolute가 적용되면 크기가 잡힌다)
+    3. 부모중에 반드시 기준이 있어야한다. (기준요소 안에서 절대 갑으로 위치를 정한다. 부모중에 없으면 body가 기준이된다)*/
+    /*
+    relative는 자주쓰이는 이유중 하나는 absolute의 부모역할을 할때.
+    */
+    body{
+      padding-top: 100px;
+      position: relative;
+    }
+    .container{ width: 500px; height: 300px;margin: 0 auto;background-color: yellow; position: absolute; left: 100px;
+    bottom: 0px;}
+    .box{width: 100px; height: 100px; color: black; font-weight: bold; text-transform: uppercase; position: absolute;}
+    .a {background-color: red; bottom: 0px; right: -50px;}  
+    .b {background-color: green; top: 50px; left: 50px;}  
+    .c {background-color: blue; top: 100px; left: 100px;}  
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box a">a</div>
+    <div class="box b">b</div>
+    <div class="box c">c</div>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolorum nihil sunt sed earum nemo ducimus est quia eveniet sapiente in reprehenderit veniam, dolores eos quidem omnis obcaecati libero facere!</p>
+</body>
+</html>
