@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+    img{display: block;}
+    ul {list-style: none;}
+    .clear ::after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+    .cards{width: 1200px; margin: 0 auto;}
+    .cards li{
+      width: 285px; height: 285px;
+      background-color: hsl(120,100%,40%);
+      float: left;
+      margin-right: 20px;
+      border-radius: 50%;
+      box-shadow: 3px 2px 15px pink;
+    }
+    .cards li:last-child {
+      margin-right: 0;
+    }
+    .cards li img {
+      width: 285px;
+      border-radius: 50%;
+      box-shadow: 3px 2px 15px pink;
+    }
+
+    .gallery{width: 1200px; margin: 30px auto;}
+    .gallery li {
+      margin-top: 10px;
+      width: 285px; 
+      border-radius: 50%;
+      background-color: hsl(120,100%,40%);
+      float: left;
+      margin-right: 20px;
+      overflow: hidden;
+    }
+    .gallery li:last-child{
+      margin-right: 0;
+    }
+    .gallery li img {
+      width: 285px;
+      border-radius: 50%;
+      box-shadow: 3px 2px 15px pink;
+    }
+    
+  </style>
+</head>
+<body>
+  <ul class="cards clear">
+    <li><img src="image/곰돌이.jpg" alt=""></li>
+    <li><img src="image/곰돌이.jpg" alt=""></li>
+    <li><img src="image/곰돌이.jpg" alt=""></li>
+    <li><img src="image/곰돌이.jpg" alt=""></li>
+  </ul>
+  
+  <ul class="gallery">
+    <li><img src="image/곰돌이.jpg" alt=""></li>
+    <li><img src="image/cat.jpg" alt=""></li>
+    <li><img src="image/이끼.jpg" alt=""></li>
+    <li><img src="image/dog-5635960_640.jpg" alt=""></li>
+  </ul>
+</body>
+</html>

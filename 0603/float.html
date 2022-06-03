@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>float</title>
+  <style>
+    .content {
+      /* word-break: keep-all; */
+    }
+    .thumb {float: left;}
+    .break {clear: left;}
+    .clear {clear: both;}
+    .gallery ::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <h1>float</h1>
+  <h2>float의 특징</h2>
+  <div class="content">
+    <img src="http://dummyimage.com/100x100" alt="" class="thumb">
+    <p>
+      paragraph paragraph paragraph paragraph paragraph paragraph 
+      paragraph paragraph <br class="break"> paragraph paragraph paragraph paragraph 
+      paragraph paragraph paragraph paragraph paragraph paragraph 
+      paragraph paragraph paragraph paragraph paragraph paragraph 
+      paragraph paragraph paragraph paragraph paragraph paragraph 
+      paragraph paragraph paragraph paragraph paragraph paragraph 
+      paragraph paragraph 
+    </p>
+  </div>
+  <hr>
+  <div class="gallery clear">
+    <p>
+      <img src="http://dummyimage.com/100x100" alt="" class="thumb">
+    </p>
+    <p>
+      <img src="http://dummyimage.com/100x100" alt="" class="thumb">
+    </p>
+    <p>
+      <img src="http://dummyimage.com/100x100" alt="" class="thumb">
+    </p>
+    <div class="clear"></div>
+
+  </div>
+</body>
+</html>

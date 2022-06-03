@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+    a{color: #666; text-decoration: none;}
+    ul{list-style: none;}
+    /* 공통 */
+    .clear::after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+    .container{
+      width: 100%;
+      border-bottom: 1px solid #ddd;
+    }
+    .container ul{
+      width: 70%;
+      margin: 0 auto;
+    }
+    .container ul li{
+      float: left;
+    }
+    .container ul li a {
+      display: block;
+      width: 120px;
+      height: 60px;
+      text-align: center;
+      font-size: 17px;
+      line-height: 56px;
+    }
+    .container ul li a:hover{
+      background-color: hsl(360, 100%, 40%);
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <ul class="clear">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Product</a></li>
+      <li><a href="#">CSR</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Recruit</a></li>
+      <li><a href="#">Support</a></li>
+    </ul>
+  </div>
+</body>
+</html>
