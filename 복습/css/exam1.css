@@ -1,0 +1,52 @@
+/* reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* common */
+.clear::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+ul {
+  list-style: none;
+}
+
+/* body */
+.container {
+  width: 900px;
+  border: 1px solid red;
+  background-color: antiquewhite;
+  margin: 0 auto;
+}
+.menu-item > li {
+  position: relative;
+  float: left;
+  width: 100px;
+  height: 38px;
+  border: 1px solid green;
+  text-align: center;
+  line-height: 36px;
+  margin: 0 50px;
+}
+.menu-item > li:first-child {
+  margin-left: 50px;
+}
+
+.menu-item li ul {
+  position: absolute;
+  left: calc(50% - (140px / 2));
+  /* display: none; */
+}
+.menu-item li:hover ul {
+  display: block;
+}
+.menu-item li ul li {
+  border: 1px solid;
+  width: 140px;
+  text-align: center;
+  list-style: 36px;
+  background-color: green;
+}

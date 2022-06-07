@@ -1,0 +1,117 @@
+@charset 'utf-8';
+/* reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+/* common */
+.clear::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.left {
+  float: left;
+}
+.logo {
+  height: 100px;
+  width: 150px;
+  background-color: cornflowerblue;
+}
+/* body */
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+/* header */
+.header {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background-color: aquamarine;
+}
+.menu {
+  position: absolute;
+  right: 30px;
+  bottom: calc(50% - 20px);
+  height: 40px;
+}
+.menu > li {
+  float: left;
+  border: 1px solid;
+}
+.menu > li:hover {
+  background-color: red;
+}
+.menu > li > a {
+  display: block;
+  width: 150px;
+  height: 38px;
+  text-align: center;
+  line-height: 36px;
+}
+.menu .submenu {
+  background-color: royalblue;
+  display: none;
+}
+.menu > li:hover .submenu {
+  display: block;
+}
+.menu .submenu li:hover {
+  background-color: red;
+}
+.menu .submenu li a {
+  display: block;
+  text-align: center;
+  border: 1px solid;
+  line-height: 36px;
+  height: 38px;
+}
+
+.slide {
+  height: 400px;
+  background-color: aliceblue;
+}
+.contents {
+  height: 300px;
+}
+.notice {
+  width: 400px;
+  height: 100%;
+  background-color: lightseagreen;
+}
+.gallery {
+  width: 400px;
+  height: 100%;
+  background-color: aqua;
+}
+.banner {
+  width: 400px;
+  height: 100%;
+  background-color: greenyellow;
+}
+.footer {
+  height: 150px;
+}
+.f_logo {
+  height: 100%;
+}
+.copyright {
+  width: 900px;
+  height: 100%;
+  background-color: burlywood;
+}
+
+.f-site {
+  width: 150px;
+  height: 100%;
+  background-color: coral;
+}
