@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    ul {list-style: none;}
+    .clear::after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+    .depth1 {
+      width: 900px;
+      border: 1px solid red;
+      background-color: beige;
+      margin: 0 auto;
+    }
+    .depth1 li {
+      position: relative;
+      float: left;
+      width: 100px;
+      height: 38px;
+      border: 1px solid green;
+      line-height: 34px;
+      text-align: center;
+      margin: 0 50px;
+    }
+    .depth1 li:nth-child(1){
+      margin-left: 50px;
+    }
+    .depth1 li ul{
+      position: absolute;
+      left: calc(50% - (140px/2));
+      display: none;
+    }
+    .depth1 li:hover ul {
+      display: block;
+    }
+    .depth1 li ul li {
+      border: 1px solid black;
+      width: 140px;
+      text-align: center;
+      line-height: 36px;
+      background-color: green;
+
+    }
+    
+  </style>
+</head>
+<body>
+    <ul class="depth1 clear">
+      <li>menu-1
+        <ul>
+          <li>submenu-1</li>
+          <li>submenu-2</li>
+          <li>submenu-3</li>
+        </ul>
+      </li>
+      <li>menu-2
+        <ul>
+          <li>submenu-1</li>
+          <li>submenu-2</li>
+          <li>submenu-3</li>
+        </ul>
+      </li>
+      <li>menu-3
+        <ul>
+          <li>submenu-1</li>
+          <li>submenu-2</li>
+          <li>submenu-3</li>
+        </ul>
+      </li>
+      <li>menu-4
+        <ul>
+          <li>submenu-1</li>
+          <li>submenu-2</li>
+          <li>submenu-3</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>

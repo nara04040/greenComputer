@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+    .clear::after {
+    content: '';
+    display: block;
+    clear: both;
+    }
+    .depth1 {
+      width: 900px;
+      border: 1px solid red;
+      background-color: beige;
+      /* overflow: hidden; */
+      margin: 0 auto;
+      
+    }
+    .depth1 .menu-item{
+      float: left;
+      width: 100px;
+      height: 40px;
+      border: 1px solid green;
+      line-height: 36px;
+      text-align: center;
+      margin: 0 50px;
+      position: relative;
+    }
+    .depth1 .menu-item:nth-child(1) {
+      margin-left: 100px;
+    }
+    .depth2 {
+      position: absolute;
+      left: calc(50% - (140px / 2));
+      display: none;
+      
+    }
+    .depth1 .menu-item:hover .depth2{display: block;}
+    .depth2 .sub-menu {
+      width: 140px;
+      text-align: center;
+      line-height: 40px;
+      background-color: darkgreen;
+    }
+    /* centering , hover했을때 li나타내는법 복습 */
+  </style>
+</head>
+<body>
+  <div class="depth1 clear">
+    <div class="menu-item">menu-1
+      <div class="depth2">
+        <div class="sub-menu">submenu-1</div>
+        <div class="sub-menu">submenu-2</div>
+        <div class="sub-menu">submenu-3</div>
+      </div>
+    </div>
+    <div class="menu-item clear">menu-2
+      <div class="depth2">
+        <div class="sub-menu">submenu-1</div>
+       <div class="sub-menu">submenu-2</div>
+       <div class="sub-menu">submenu-3</div></div>
+    </div>
+  <div class="menu-item clear">menu-3
+    <div class="depth2">
+      <div class="sub-menu">submenu-1</div>
+    <div class="sub-menu">submenu-2</div>
+    <div class="sub-menu">submenu-3</div></div>
+  </div>
+  <div class="menu-item clear">menu-4
+    <div class="depth2">
+    <div class="sub-menu">submenu-1</div>
+  <div class="sub-menu">submenu-2</div>
+  <div class="sub-menu">submenu-3</div></div></div>
+  </div>
+</body>
+</html>

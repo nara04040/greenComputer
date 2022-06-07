@@ -1,0 +1,36 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+ul {list-style: none;}
+
+.clear::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.depth1 {
+  width: 900px;
+  border: 1px solid red;
+  background-color: bisque;
+  margin: 20px auto;
+}
+.depth1 > li {
+  position: relative;
+  float: left;
+  width: 100px;
+  height: 40px;
+  line-height: 36px;
+  text-align: center;
+  border: 1px solid green;
+  margin: 0 50px;
+}
+.depth1 > li:first-child {
+  margin-left: 100px;
+}
+.depth1 > li > ul {
+  border: 1px solid royalblue;
+  position: absolute;
+  left: calc(50% - 70px);
+}
+
+.depth1 > li > ul > li {
+  width: 140px;
+}
