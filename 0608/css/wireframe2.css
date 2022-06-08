@@ -99,8 +99,44 @@ ul , li {
   height: 200px;
   background-color: brown;
 }
+.contents .notice{
+  width: 400px;
+  height: 200px;
+  background-color: cornflowerblue;
+  float: left;
+}
+.contents .gallery{
+  width: 400px;
+  height: 200px;
+  background-color: hsl(0, 100%, 20%);
+  float: left;
+}
+.contents .banner {
+  width: 400px;
+  height: 200px;
+  background-color: hsl(210, 94%, 74%);
+  float: left;
+}
 /* footer */
 .footer .container{
   height: 100px;
   background-color: #333;
+}
+.footer .f-logo {
+  width: 150px;
+  height: 100%;
+ background-color: lightblue;
+ float: left;
+}
+.footer .b-box {
+  width: 900px;
+  height: 100%;
+  background-color: black;
+  float: left;
+}
+.footer .f-site {
+  width: 150px;
+  height: 100%;
+  background-color: darkcyan;
+  float: left;
 }
