@@ -1,0 +1,130 @@
+/* reset */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+/* container : width :900px 고정*/
+
+/* common */
+.clear::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.left{
+  float: left;
+}
+img{
+  display: block;
+}
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+h1 {
+  margin: 10px;
+  margin-left: 0;
+}
+/* header */
+.nav_bar{
+  margin: 5px;
+  margin-bottom: 60px;
+  height: 40px;
+  box-shadow: 5px 0px 8px 0px rgba(60, 66, 87, .2) ;
+}
+.logo {
+  font-weight: bold;
+  float: left;
+  line-height: 40px;
+}
+
+.login {
+  float: right;
+  background-color: white;
+  border: none;
+  color: gray;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+.photos{
+  width: 600px;
+  margin: 0 auto;
+}
+.photos img{
+  width: 300px;
+  height: 400px;
+  float: left;
+}
+.kitty_puppy p, .kitty_puppy h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* main */
+
+.about__kitty{
+  background-color: #eff2f4;
+}
+.about__nav {
+  float: left;
+  padding: 3px;
+}
+.about__content {
+  margin-left: 180px;
+}
+.about_kitty {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 5px;
+  text-align: center;
+}
+.intro_nav , .main_nav, .summary_nav{
+  font-size: 18px;
+}
+
+.blue_eye {
+  width: 250px;
+  margin: 10px;
+  float: left;
+}
+.contents {
+}
+
+/* dog */
+.about__puppy{
+  
+}
+.about_puppy {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 5px;
+  text-align: center;
+}
+.brown_dog {
+  width: 250px;
+  margin: 10px;
+  float: left;
+}
+
+/* footer */
+.f-docs{
+  background-color: #333;
+  height: 100px;
+  color: #fff;
+  font-size: 12px;
+  padding: 12px;
+}
+.copyright {
+  margin: 2px;
+  margin-left: 0;
+}
+.tel {
+  display: inline;
+  float: left;
+  margin-right: 20px;
+}

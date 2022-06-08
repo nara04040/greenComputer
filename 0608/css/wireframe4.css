@@ -1,0 +1,150 @@
+@charset 'utf-8';
+/* reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul, li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+img {
+  vertical-align: top;
+}
+/* common */
+.clear::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.left {
+  float: left;
+}
+#wrap {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+}
+/* body */
+
+/* left side */
+.left-side{
+  float: left;
+  width: 200px;
+  background-color: maroon;
+}
+.header .logo{
+  height: 150px;
+  background-color: cornflowerblue;
+}
+.header .gnb  {
+  width: 90%;
+  margin: 10px auto;
+  background-color: cornflowerblue;
+}
+.header .gnb .depth1 > li {
+  position: relative;
+}
+
+.header .gnb .depth1 .depth2 {
+  position: absolute;
+  width: 90%;
+  right: -90%;
+  top: 0px;
+}
+
+.header .gnb .depth1 .mainmenu > a {
+  display: block;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background-color: antiquewhite;
+}
+
+
+.header .gnb .depth1 .mainmenu:hover .depth2{
+  display: block;
+}
+.header .gnb .depth1:hover .mainmenu{
+  background-color: orange;
+}
+/* .header .gnb .depth1 .mainmenu .depth2 li a:hover {
+  background-color: red;
+} */
+.header .gnb .depth1 .mainmenu:hover > a{
+  background-color: firebrick;
+}
+
+
+.gnb .depth1 .depth2 {
+  display: none;
+}
+
+.gnb .depth1 .depth2 li:hover > a{/* > a안하면 왜 안되는지  
+  우선순위 문제? */
+  background-color: firebrick;
+}
+.gnb .depth1 .depth2 li > a{
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background-color: skyblue;
+}
+
+
+/* right side */
+.right-side {
+    float: right;
+    width: 800px;
+    background-color: blue;
+}
+.slide{
+  width: 100%;
+  height: 300px;
+  background-color: yellow;
+}
+.container{
+  width: 100%;
+  height: 300px;
+}
+.notice {
+  width: 266px;
+  height: 100%;
+  background-color: bisque;
+}
+.gallery {
+  width: 266px;
+  height: 100%;
+  background-color:antiquewhite;
+}
+.link {
+  width: 268px;
+  height: 100%;
+  background-color: lightpink;
+}
+.footer {
+  width: 100%;
+  height: 100px;
+}
+.b-box {
+  width: 100px;
+  height: 100%;
+  background-color: #333;
+}
+.menu-box {
+  width: 100%;
+  height: 50px;
+  background-color: darkblue;
+}
+.copy-box {
+  width: 100%;
+  height: 50px;
+  background-color: darkgreen;
+}
