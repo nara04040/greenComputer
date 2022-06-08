@@ -45,6 +45,7 @@ a {
   bottom: calc(50% - 20px);
   height: 40px;
   width: 600px;
+  background-color: azure;
 }
 .menu>li {
   float: left;
