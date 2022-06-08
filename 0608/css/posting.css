@@ -30,6 +30,9 @@ h1 {
   margin: 10px;
   margin-left: 0;
 }
+h4 {
+  margin: 20px 0;
+}
 /* header */
 .nav_bar{
   margin: 5px;
@@ -72,7 +75,7 @@ h1 {
 }
 .about__nav {
   float: left;
-  padding: 3px;
+  padding: 20px;
 }
 .about__content {
   margin-left: 180px;

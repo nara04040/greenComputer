@@ -96,3 +96,17 @@ button {
   margin-right: 20px;
   float: left;
 }
+
+/* footer */
+.footer {
+  background-color: #2f3437;
+}
+
+.footer .container {
+  padding: 12px;
+
+}
+.footer .container p {
+  margin: 2px 0;
+  color: #fff;
+}
