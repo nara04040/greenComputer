@@ -103,10 +103,26 @@ button {
 }
 
 .footer .container {
+  position: relative;
   padding: 12px;
 
 }
 .footer .container p {
   margin: 2px 0;
+  color: #fff;
+}
+.material-icons {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 24px;
+  color: #fff;
+}
+.material-icons-upload{
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
   color: #fff;
 }
