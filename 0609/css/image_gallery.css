@@ -41,6 +41,22 @@ img {
 }
 .wrapper img {
   max-width: 100%;
-  box-shadow: 5px 5px 10px #333;
-  border-radius: 15px;
+  box-shadow: 1px 3px 8px #333;
+}
+.wrapper img:hover {
+  border-radius: 5%;
+  transition: all .5s;
+}
+.img_desc{
+  margin-top: 4px;
+  text-align: center;
+  display: none;
+  font-weight: bold;
+}
+.wrapper:hover .img_desc {
+  display: block;
+  background-color:aliceblue;
+  font-size: 20px;
+  border-radius: 10px;
+  transition: all 1s ease-in-out 1s;
 }
