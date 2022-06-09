@@ -1,0 +1,171 @@
+@charset 'utf-8';
+/* reset */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul, li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+img {
+  vertical-align: top;
+}
+
+/* common */
+
+
+/* body */
+.fixed {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  top: 0;
+  z-index: 9;
+}
+.navigation {
+  padding: 20px;
+  box-shadow: 3px 3px 7px -3px #333;
+}
+ul li {
+  display: inline-block;
+  width: 100px;
+}
+ul li a {
+  padding: 20px;
+  text-align: center;
+}
+ul li a:hover {
+  color: #fff;
+  background-color: #333;
+}
+ul li a:active{
+  font-size: 15px;
+}
+/* content */
+.content {
+  position: relative;
+  width: 1100px;
+  height: 900px;
+  margin: 60px auto;
+  border: 1px solid red;
+}
+
+/* sidebar */
+.sidebar {
+  position: absolute;
+  left: 20px;
+  top: 40px;
+  width: 170px;
+  height: 750px;
+  box-shadow: 3px 3px 15px -7px #333;
+}
+.sticky {
+  position: absolute;
+  top: 70px;
+  width: 170px;
+  height: 450px;
+}
+.sidebar input[type=text] {
+  width: 130px;
+  margin: 20px;
+  padding: 10px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+}
+
+.sidebar input::placeholder {
+  color: #fff;
+}
+.sidebar ul {
+  width: 150px;
+  margin: 0 auto;
+}
+
+.sidebar ul li a {
+  display: block;
+  width: 150px;
+  text-align: center;
+  padding: 10px;
+}
+
+/* banner */
+.banner {
+  position: absolute;
+  top: 60x;
+  left: 210px;
+  width: 650px;
+  height: 550px;
+  background-color: green;
+}
+.banner img {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+}
+.heading {
+  position: absolute;
+  top: 350px;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, .5);
+}
+.heading h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.heading p {
+  font-size: 20px;
+  line-height: 30px;
+}
+.heading p a {
+  color: #fff;
+  background-color: #333;
+  border-radius: 10px;
+  padding: 5px 12px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.heading p a:hover {
+  background-color: #fff;
+  color: #333;
+  border: 2px solid #333;
+  font-weight: bold;
+}
+
+.ribbon_t, .ribbon_b {
+  position: absolute;  
+  width: 100%;
+  height: 20px;
+  
+  background-color: #333;
+}
+.ribbon_t {
+  top:0
+}
+.ribbon_b {
+  bottom: 0;
+}
+.profile {
+  position: absolute;
+  left: 210px;
+  top: 630px;
+  width: 650px;
+  height: 280px;
+  box-shadow: 3px 3px 15px -7px #333;
+}
+.pro_img {
+
+}
+.pro_img img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
