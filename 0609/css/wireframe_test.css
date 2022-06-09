@@ -1,0 +1,165 @@
+/* reset */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul, li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+img {
+  display: block;
+}
+
+/* common */
+.clear::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.left {
+  float: left;
+}
+.logo {
+  width: 200px;
+  height: 100%;
+}
+/* body */
+.wrap {
+  width:100%;
+  height: 700px;
+}
+
+/* header */
+.head-container {
+  width: 1200px;
+  height: 100px;
+  margin: 0 auto;
+}
+.header {
+  width: 100%;
+  height: 100px;
+  background-color:aliceblue;
+  position: relative;
+}
+.h-logo {
+  text-align: center;
+  line-height: 100px;
+}
+.depth1 {
+  position: absolute;
+  top: 30px;
+  right: 26%;
+  height: 50px;
+}
+.depth1 > li {
+  float: left;
+  
+}
+.depth1 > li > a{
+  display: block;
+  border: 1px solid #333;
+  text-align: center;
+  line-height: 50px;
+  width: 100px;
+  height: 50px;  
+}
+.depth1 > li > a:hover {
+  background-color: red;
+}
+.gnb .depth1 .depth2 {
+  width: 100px;
+  height: 100px;
+}
+.depth1 .depth2 > li {
+} 
+.depth1 .depth2 > li > a {
+  display: block;
+  text-align: center;
+  line-height: 30px;
+  width: 100px;
+  height: 30px; 
+  display: none;
+}
+.depth1 .depth2 > li > a:hover{
+  background-color: red;
+}
+.header .head-container .gnb .depth1:hover .depth2 > li > a {
+  display: block;
+}
+/* visual */
+.visual {
+  width: 1200px;
+  height: 300px;
+  margin: 0 auto;
+  background-color:antiquewhite;
+}
+.slide {
+  text-align: center;
+  line-height: 450px;
+}
+
+.container{
+  width: 1200px;
+  height: 200px;
+  margin: 0 auto;
+}
+.notice {
+  width: 400px;
+  height: 100%;
+  text-align: center;
+  line-height: 200px;
+  background-color: aqua;
+}
+.banner {
+  width: 400px;
+  height: 100%;
+  text-align: center;
+  line-height: 200px;
+  background-color: aquamarine;
+}
+.hyperlink {
+  width: 400px;
+  height: 100%;
+  text-align: center;
+  line-height: 200px;
+  background-color: beige;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: aliceblue;
+}
+.footer-container {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+.f-logo {
+  line-height: 100px;
+  text-align: center;
+  background-color: yellowgreen;
+  float: left;
+}
+.f-menu {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: yellow;
+}
+.copyright {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: purple;
+}
+
+
