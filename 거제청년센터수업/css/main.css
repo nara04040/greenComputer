@@ -1,21 +1,24 @@
 @charset 'utf-8';
 /* font */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 @font-face {
-  font-family: 'GmarketSansBold';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+  font-family: "GmarketSansBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'GmarketSansMedium';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'GmarketSansLight';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+  font-family: "GmarketSansLight";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -29,7 +32,8 @@ a {
   text-decoration: none;
   color: #333;
 }
-ul, li {
+ul,
+li {
   list-style: none;
 }
 img {
@@ -38,14 +42,15 @@ img {
 
 /* common */
 body {
-  font-family: "Open Sans", GmarketSansMedium, GmarketSansLight, GmarketSansBold, '맑은 고딕', '돋움', Dotum, '굴림', Gulim, Sans-serif;
+  font-family: "Open Sans", GmarketSansMedium, GmarketSansLight, GmarketSansBold,
+    "맑은 고딕", "돋움", Dotum, "굴림", Gulim, Sans-serif;
 }
 .inner {
   width: 1400px;
   margin: 0 auto;
 }
-.clear::after{
-  content: '';
+.clear::after {
+  content: "";
   display: block;
   clear: both;
 }
@@ -97,9 +102,8 @@ h3 {
   top: 28px;
   float: left;
   line-height: 45px;
-  
 }
-.gnb-util .gnb-wrap > li{
+.gnb-util .gnb-wrap > li {
   float: left;
   margin-right: 15px;
   margin: 14px;
@@ -116,7 +120,6 @@ h3 {
   margin-left: 10px;
 }
 
-
 /* visual */
 .visual {
   width: 100%;
@@ -129,7 +132,8 @@ h3 {
 .quick-menu .inner {
   height: 110px;
 }
-.quick-menu ul{}
+.quick-menu ul {
+}
 .quick-menu ul li {
   float: left;
   width: 20%;
@@ -137,7 +141,7 @@ h3 {
   margin: 15px 0 11px 0;
   border-right: 1px solid #d9dbde;
 }
-.quick-menu ul li:last-child{
+.quick-menu ul li:last-child {
   border: 0;
 }
 .quick-menu ul li a {
@@ -147,7 +151,7 @@ h3 {
   padding-left: 75px;
   text-align: center;
   transform: translateX(0);
-  transition: transform .5s;
+  transition: transform 0.5s;
 }
 .quick-menu ul li a:hover {
   transform: translateX(-10px);
@@ -173,10 +177,9 @@ h3 {
   background-size: 56px 56px;
 }
 
-
 /* notice */
 .notice {
-  margin : 70px 0 60px 0;
+  margin: 70px 0 60px 0;
 }
 
 .notice .notice-left {
@@ -191,6 +194,11 @@ h3 {
   padding-bottom: 20px;
   margin-bottom: 25px;
   background: url(../image/img_bg_line.png) repeat-x 0 100%;
+  color: #0e62b2;
+}
+.notice .notice-left-calendar h3 {
+  padding-bottom: 20px;
+  margin-bottom: 25px;
   color: #0e62b2;
 }
 .notice .notice-left ul li {
@@ -223,21 +231,91 @@ h3 {
   text-align: end;
 }
 
-.notice-more{
+.notice-more {
   position: absolute;
   top: 40px;
   right: 30px;
   padding-left: 22px;
   background: url(../image/플러스.png) no-repeat left center;
 }
+
+/* calendar */
+.notice-left-calendar {
+  position: relative;
+}
+.calendar-bottom {
+  width: 420px;
+  height: 371px;
+}
+.area_calendar {
+  position: relative;
+  margin: 0 15px;
+  padding: 36px 30px;
+  width: 390px;
+  height: 372px;
+  border: 1px solid#e6e8eb;
+}
+
+.calendar-top .calendar-prev {
+  position: absolute;
+  top: 21%;
+  left: 30px;
+  text-indent: 100%;
+  width: 22px;
+  height: 22px;
+  background: url(../image/img_arrow01.svg) no-repeat 50% 50%;
+  border: 2px solid #e1e1e1;
+}
+.now-date {
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 21%;
+  left: 40%;
+}
+.calendar-next {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  top: 21%;
+  right: 20px;
+  background: url(../image/img_arrow01.svg) no-repeat 50% 50%;
+  transform: rotate(180deg);
+  border: 2px solid #e1e1e1;
+}
+.calendar {
+  margin-left: 25px;
+}
+
+.notice
+  .inner
+  .notice-left-calendar
+  .area_calendar
+  .calendar-bottom
+  .calendar
+  tbody
+  tr
+  > td {
+  text-align: center;
+  background-color: rgb(240, 239, 239);
+  width: 38px;
+  height: 35px;
+  border-bottom: 2px solid white;
+  border-right: 4px solid white;
+  border-left: 4px solid white;
+}
+
+#bac-non {
+  background-color: white;
+}
+#bac-red {
+  color: red;
+}
+#bac-blue {
+  color: blue;
+}
 /* gallery */
-
-
 
 /* banner */
 
-
-
 /* footer */
-
-
