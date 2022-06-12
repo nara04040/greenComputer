@@ -145,10 +145,20 @@ img {
   margin: 0 20px;
 }
 .c-lb-box {
-  display: inline-block;
+  display: block;
   width: 100%;
   height: 500px;
   background-color: lightblue;
+}
+.c-lb-box > p {
+  display: block;
+}
+.why-image {
+  float: left;
+  display: block;
+  background-image: url(../image/왜?.jpeg);
+  width: 150px;
+  height: 150px;
 }
 .c-lg-t-box {
   width: 100%;
@@ -156,9 +166,25 @@ img {
   background-color: lightseagreen;
 }
 .c-br-box {
+  position: relative;
   width: 100%;
   height: 300px;
   background-color: burlywood;
+}
+.c-br-box > img {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  float: left;
+}
+.box-img-desc {
+  position: absolute;
+  top: 50px;
+  left: 35%;
+  line-height: 30px;
 }
 .c-lg-b-box {
   width: 100%;
@@ -176,7 +202,10 @@ img {
   width: 100%;
   height: 430px;
   background-color: darkred;
+  overflow: scroll;
+  font-size: 16px;
 }
+
 .r-p-box {
   width: 100%;
   height: 40px;
@@ -186,6 +215,7 @@ img {
   width: 100%;
   height: 380px;
   background-color: darkcyan;
+  overflow: scroll;
 }
 .r-p-b-box {
   width: 100%;
