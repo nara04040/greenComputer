@@ -92,38 +92,28 @@ h3{
 .gnb > li >a:hover{
   color: #2578DE;
 }
-/* 수정메뉴 */
-.sub-div {
+
+.header .gnb > li .sub-menu {
   position: absolute;
-  top: 80%;
   left: 50%;
-  transform: translateX(-50%);
-  background-color: transparent;
-  border-radius: 3px;
-  pointer-events: none;
-  
-}
-.sub-menu {
-  position: relative;
-  top: 30px;
-  /* transform: translateX(-85px); 원래-50% */
+  top: 120%;
+  transform: translateX(-85px); /*원래-50%*/
   background-color: white;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
   border-radius: 3px;
-  border: 1px solid rgba(255, 255, 255, .4);
   opacity: 0;
   transition: all .5s;
   pointer-events: none;
 }
-.gnb > li:hover > .sub-div .sub-menu {
+.header .gnb > li:hover .sub-menu {
   opacity: 1;
-  top: 0;
+  top: 90%;
   pointer-events: auto;
 }
- .sub-menu > li{
+.header .gnb > li .sub-menu > li{
   border-top: 1px solid #eaeaea;
 }
- .sub-menu > li a {
+.header .gnb > li .sub-menu > li a {
   display: block;
   width: 180px;
   padding: 12px 15px;
