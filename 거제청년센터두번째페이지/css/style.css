@@ -169,3 +169,72 @@ body {
   font-size: 30px;
   font-weight: 400;
 }
+
+/* images */
+.img-content-wrap .content-colum {
+  padding: 20px;
+  margin-left: 30px;
+}
+.img-content-wrap .content-colum .img-list img{
+  display: block;
+  width: 300px;
+  height: 300px;
+}
+
+
+
+
+
+
+
+
+/* footer */
+.footer {
+  background: url(../image/footer-line.jpg) center;
+}
+.footer-top {
+  height: 162px;
+  border-bottom: 1px solid rgb(255, 255, 255, 0.04)
+}
+.footer-top .inner{
+  padding: 15px 0 30px;
+}
+.footer-top .btns{
+  padding: 15px 0 10px;
+}
+.footer-top .btns .btn {
+  display: inline-block;
+  padding: 4px 10px;;
+  font-size: 13px;
+  margin-right: 13px;
+  background-color: transparent;
+  border: 1px solid rgba(238,238,238,0.2);
+  color: #888;
+  border-radius: 4px;
+  font-family: "Open Sans", GmarketSansMedium, GmarketSansLight, GmarketSansBold, '맑은 고딕', '돋움', Dotum, '굴림', Gulim, Sans-serif;;
+}
+.footer-top .btns .btn:hover {
+  background-color: rgba(255,255,255,0.08);
+  transition: all 0.5s ease 0s;
+}
+.footer-top span{
+  margin-top: 7px;
+  font-size: 14px;
+  color: #888;
+  line-height: 21px;
+}
+.footer-top span em{
+  color: #555;
+  font-style: normal;
+}
+.footer-bottom{
+  height: 82px;
+}
+.footer-bottom .inner {
+  padding: 30px 0;
+}
+.footer-bottom p {
+  font-size: 14px;
+  color: #888;
+  line-height: 21px;
+}

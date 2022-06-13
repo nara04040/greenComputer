@@ -76,6 +76,7 @@ h3{
   left: 255px;
 }
 .gnb li{
+  position: relative;
   float: left;
 }
 .gnb > li >a{
@@ -88,6 +89,14 @@ h3{
 }
 .gnb > li >a:hover{
   color: #2578DE;
+}
+.header .gnb > li .sub-menu {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-90px);
+  width: 180px;
+  background-color: white;
 }
 .gnb-util{
   position: absolute;
@@ -217,7 +226,7 @@ h3{
   white-space: nowrap;
   overflow: hidden;
 }
-/* 위에 3개 점... 생략시키기! */
+
 .notice .notice-left ul li span{
   float: right;
   width: 85px;
@@ -236,7 +245,7 @@ h3{
   no-repeat left center;
 }
 
-/* 달력 */
+/* calendar */
 
 .notice .notice-right{
   position: relative;
@@ -350,12 +359,29 @@ h3{
   background-color: #fff;
   width: 300px;
   margin-right: 20px;
+  position: relative;
 }
 .act-gallery .gallery-box.last-child{
   margin-right: 0;
 }
-.act-gallery .gallery-box a{}
-.act-gallery .gallery-box a .gallery-card{}
+.act-gallery .gallery-box .gallery-card::after{
+content: '';
+display: block;
+position: absolute;
+top: 0;
+left: 0;
+width: 300px;
+height: 195px;
+background: rgba(0, 0, 0, 0);
+transition: all 0.5s ease-out ;
+}
+.act-gallery .gallery-box:hover .gallery-card::after{
+  background: rgba(0, 0, 0, 0.4);
+}
+.act-gallery .gallery-box:hover{
+  box-shadow: 15px 15px 34px rgb(0 0 0 / 28%);
+}
+
 .act-gallery .gallery-box .gallery-card .gallery-pic img{
   width: 300px;
   height: 195px;
@@ -482,6 +508,7 @@ h3{
 .banner .banner-control-box .banner-play {
   background: url(../image/img_banner_play.png);
 }
+
 /* banner slide */
 .sw-banner {
   width: 1182px;
@@ -496,4 +523,80 @@ h3{
 }
 .sw-banner .swiper-slide:nth-child(6){
   margin-right: 0;
+}
+
+/* footer */
+.footer {
+  background: url(../image/footer-line.jpg) center;
+}
+.footer-top {
+  height: 162px;
+  border-bottom: 1px solid rgb(255, 255, 255, 0.04)
+}
+.footer-top .inner{
+  position: relative;
+  padding: 15px 0 30px;
+}
+.footer-top .btns{
+  padding: 15px 0 10px;
+}
+.footer-top .btns .btn {
+  display: inline-block;
+  padding: 4px 10px;;
+  font-size: 13px;
+  margin-right: 13px;
+  background-color: transparent;
+  border: 1px solid rgba(238,238,238,0.2);
+  color: #888;
+  border-radius: 4px;
+  font-family: "Open Sans", GmarketSansMedium, GmarketSansLight, GmarketSansBold, '맑은 고딕', '돋움', Dotum, '굴림', Gulim, Sans-serif;;
+}
+.footer-top .btns .btn:hover {
+  background-color: rgba(255,255,255,0.08);
+  transition: all 0.5s ease 0s;
+}
+.footer-top span{
+  margin-top: 7px;
+  font-size: 14px;
+  color: #888;
+  line-height: 21px;
+}
+.footer-top span em{
+  color: #555;
+  font-style: normal;
+}
+.gotop{
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  z-index: 99;
+  background-color: #f74141;
+  border-radius: 4px;
+  text-indent: -9999px;
+}
+.footer-top .gotop::after {
+  content: 'none';
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  width: 6px;
+  height: 10px;
+  background: url(../image/img_arrow04.svg)no-repeat;
+}
+.footer-bottom{
+  height: 82px;
+}
+.footer-bottom .inner {
+  padding: 30px 0;
+}
+.footer-bottom p {
+  font-size: 14px;
+  color: #888;
+  line-height: 21px;
 }
