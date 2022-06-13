@@ -1,91 +1,84 @@
 @charset 'utf-8';
-/* font */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @font-face {
-  font-family: "GmarketSansBold";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
-    format("woff");
+  font-family: 'GmarketSansLight';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "GmarketSansMedium";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
-    format("woff");
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "GmarketSansLight";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff")
-    format("woff");
+  font-family: 'GmarketSansBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
-/* reset */
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+*{
+  margin: 0; padding: 0; box-sizing: border-box;
 }
-a {
-  text-decoration: none;
+a{
   color: #333;
+  text-decoration: none;
 }
-ul,
-li {
+ul, li{
   list-style: none;
 }
-img {
+body{
+  font-family: "Open Sans", GmarketSansMedium, GmarketSansLight, GmarketSansBold, '맑은 고딕', '돋움', Dotum, '굴림', Gulim, Sans-serif;
+}
+img{
   vertical-align: top;
+  
 }
 
-/* common */
-body {
-  font-family: "Open Sans", GmarketSansMedium, GmarketSansLight, GmarketSansBold,
-    "맑은 고딕", "돋움", Dotum, "굴림", Gulim, Sans-serif;
-}
-.inner {
+/* 공통영역 */
+.inner{
   width: 1400px;
   margin: 0 auto;
 }
-.clear::after {
-  content: "";
-  display: block;
-  clear: both;
+.clear::after{
+  content: ''; display: block; clear: both;
 }
-.left {
+.left{
   float: left;
 }
-.right {
+.right{
   float: right;
 }
-h3 {
+h3{
   font-size: 22px;
   font-weight: 400;
   line-height: 33px;
+  font-family: "Open Sans", GmarketSansMedium, GmarketSansLight, GmarketSansBold, '맑은 고딕', '돋움', Dotum, '굴림', Gulim, Sans-serif;
+  margin-bottom: 25px;
 }
+
 /* header */
-.header {
+.header{
   width: 100%;
   background-color: #fff;
 }
-.header .inner {
-  height: 98px;
+.header .inner{
+  height: 90px;
   position: relative;
 }
-.header h1 {
+.header h1{
   padding: 21px 0 23px;
 }
-.gnb {
+.gnb{
   position: absolute;
   top: 0px;
   left: 255px;
 }
-.gnb > li {
+.gnb li{
   float: left;
 }
-.gnb > li > a {
+.gnb > li >a{
   display: block;
   font-size: 19px;
   line-height: 60px;
@@ -93,229 +86,347 @@ h3 {
   margin: 20px 0 5px 0;
   padding: 0 15px;
 }
-.gnb > li > a:hover {
-  color: #2578de;
+.gnb > li >a:hover{
+  color: #2578DE;
 }
-.gnb-util {
+.gnb-util{
   position: absolute;
   right: 0;
   top: 28px;
-  float: left;
-  line-height: 45px;
 }
-.gnb-util .gnb-wrap > li {
+.gnb-util .gnb-wrap{}
+.gnb-util .gnb-wrap > li{
   float: left;
-  margin-right: 15px;
-  margin: 14px;
+  margin: 10px;
 }
-.gnb-util .gnb-wrap > li > a {
+.gnb-util .gnb-wrap > li >a {
   display: block;
-  font-family: GmarketSansLight;
+  font-family: GmarketSanslight;
   font-size: 16px;
   line-height: 24px;
   font-weight: bold;
   color: #666;
 }
-.gnb-menu {
-  margin-left: 10px;
+.gnb-util .all-menu {
+  margin-left: 14px;
 }
-
 /* visual */
-.visual {
+.visual{
   width: 100%;
 }
-/* quick menu */
-.quick-menu {
+.visual img {
+  width: 100%;
+}
+/* quick_menu */
+.quick_menu{
   width: 100%;
   background-color: #f2f4f7;
 }
-.quick-menu .inner {
+.quick_menu .inner{
   height: 110px;
 }
-.quick-menu ul {
-}
-.quick-menu ul li {
+.quick_menu ul{}
+.quick_menu ul li{
   float: left;
   width: 20%;
   height: 84px;
   margin: 15px 0 11px 0;
   border-right: 1px solid #d9dbde;
 }
-.quick-menu ul li:last-child {
+.quick_menu ul li:last-child{
   border: 0;
 }
-.quick-menu ul li a {
+.quick_menu ul li a{
   display: block;
   font-size: 17px;
   line-height: 84px;
   padding-left: 75px;
   text-align: center;
   transform: translateX(0);
-  transition: transform 0.5s;
+  transition: transform .5s;
 }
-.quick-menu ul li a:hover {
+/* transition으로 자연스럽게 바꾸는건데 절대 hover에 쓰면 안됨ㅇㅇ */
+/* rotate(360deg) / x y축을 기준으로 돌아돌아 돌림판 */
+.quick_menu ul li a:hover {
   transform: translateX(-10px);
 }
-.quick-menu ul li:nth-child(1) a {
-  background: url(../image/img_icon01.svg) no-repeat 53px 11px;
-  background-size: 56px 56px;
-}
-.quick-menu ul li:nth-child(2) a {
-  background: url(../image/img_icon02.svg) no-repeat 66px 11px;
-  background-size: 56px 56px;
-}
-.quick-menu ul li:nth-child(3) a {
-  background: url(../image/img_icon03.svg) no-repeat 62px 11px;
-  background-size: 56px 56px;
-}
-.quick-menu ul li:nth-child(4) a {
-  background: url(../image/img_icon04_new.png) no-repeat 52px 11px;
-  background-size: 56px 56px;
-}
-.quick-menu ul li:nth-child(5) a {
-  background: url(../image/img_icon05_new.png) no-repeat 67px 11px;
-  background-size: 56px 56px;
+.quick_menu ul li:nth-child(1) a{
+  background: url('../image/img_icon01.svg')
+  no-repeat 53px 11px;
+  background-size: 56px;
 }
 
+.quick_menu ul li:nth-child(2) a{
+  background: url('../image/img_icon02.svg')
+  no-repeat 66px 11px;
+  background-size: 56px;
+}
+
+.quick_menu ul li:nth-child(3) a{
+  background: url('../image/img_icon03.svg')
+  no-repeat 63px 11px ;
+  background-size: 56px;
+}
+
+.quick_menu ul li:nth-child(4) a{
+  background: url('../image/img_icon04_new.png')
+  no-repeat 52px 11px;
+  background-size: 56px;
+}
+
+.quick_menu ul li:nth-child(5) a{
+  background: url('../image/img_icon05_new.png')
+  no-repeat 67px 11px;
+  background-size: 56px;
+}
 /* notice */
-.notice {
+.notice{
   margin: 70px 0 60px 0;
 }
-
-.notice .notice-left {
-  position: relative;
+.notice .notice-left{
   width: 470px;
-  height: 373px;
+  height: 372px;
   border: 1px solid #e6e8eb;
   margin-right: 20px;
   padding: 36px 30px;
+  position: relative;
 }
-.notice .notice-left h3 {
-  padding-bottom: 20px;
-  margin-bottom: 25px;
-  background: url(../image/img_bg_line.png) repeat-x 0 100%;
-  color: #0e62b2;
-}
-.notice .notice-left-calendar h3 {
+.notice .notice-left h3{
   padding-bottom: 20px;
   margin-bottom: 25px;
   color: #0e62b2;
+  background: url('../images/img_bg_line.png') repeat-x left bottom;
 }
-.notice .notice-left ul li {
+.notice .notice-left ul li{
   border-bottom: 1px solid #e6e6e6;
   padding: 14px 0;
   overflow: hidden;
 }
-.notice .notice-left ul li:last-child {
+.notice .notice-left ul li:last-child{
   border: 0;
 }
-.notice .notice-left ul li a {
-  width: 271px;
+.notice .notice-left ul li a{
   display: block;
   float: left;
+  width: 271px;
   font-size: 16px;
-  font-weight: 200px;
+  font-weight: 200;
   line-height: 24px;
   color: #444;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
-.notice .notice-left ul li span {
+/* 위에 3개 점... 생략시키기! */
+.notice .notice-left ul li span{
   float: right;
   width: 85px;
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
   color: #444;
+  cursor: pointer;
   text-align: end;
 }
-
-.notice-more {
+.notice-more{
   position: absolute;
-  top: 40px;
-  right: 30px;
+  top: 40px; right: 30px;
   padding-left: 22px;
-  background: url(../image/플러스.png) no-repeat left center;
+  background: url('../images/plus.jpg')
+  no-repeat left center;
 }
 
-/* calendar */
-.notice-left-calendar {
+/* 달력 */
+
+.notice .notice-right{
   position: relative;
-}
-.calendar-bottom {
-  width: 420px;
-  height: 371px;
-}
-.area_calendar {
-  position: relative;
-  margin: 0 15px;
-  padding: 36px 30px;
-  width: 390px;
+  width: 392px;
   height: 372px;
-  border: 1px solid#e6e8eb;
+  padding: 36px 30px;
+  border: 1px solid #e6e8eb;
+  margin-left: 15px;
 }
-
-.calendar-top .calendar-prev {
-  position: absolute;
-  top: 21%;
-  left: 30px;
-  text-indent: 100%;
-  width: 22px;
-  height: 22px;
-  background: url(../image/img_arrow01.svg) no-repeat 50% 50%;
-  border: 2px solid #e1e1e1;
+.notice .notice-right h3{
+  color: #0e62b2;
+  padding-left: 10px;
+  margin-bottom: 14px;
 }
-.now-date {
-  font-size: 20px;
-  font-weight: bold;
-  position: absolute;
-  top: 21%;
-  left: 40%;
-}
-.calendar-next {
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  top: 21%;
-  right: 20px;
-  background: url(../image/img_arrow01.svg) no-repeat 50% 50%;
-  transform: rotate(180deg);
-  border: 2px solid #e1e1e1;
-}
-.calendar {
-  margin-left: 25px;
-}
-
-.notice
-  .inner
-  .notice-left-calendar
-  .area_calendar
-  .calendar-bottom
-  .calendar
-  tbody
-  tr
-  > td {
+.notice .notice-right .cal-top{
   text-align: center;
-  background-color: rgb(240, 239, 239);
-  width: 38px;
-  height: 35px;
-  border-bottom: 2px solid white;
-  border-right: 4px solid white;
-  border-left: 4px solid white;
+  font-size: 22px;
+  margin: 0 3px 10px;
+  font-weight: 700;
+  line-height: 33px;
+}
+.notice .notice-right .cal-top .prev-month{
+  display: block;
+  width: 34px; height: 34px;
+  border: 1px solid #e6e8eb;
+  font-size: 0;
+  text-indent: -9999px;
+  background: url(../image/img_arrow01.svg)no-repeat 50% 50%;
+  background-size: 6px 10px;
+}
+.notice .notice-right .cal-top .next-month{
+  display: block;
+  width: 34px; height: 34px;
+  border: 1px solid #e6e8eb;
+  font-size: 0;
+  text-indent: -9999px;
+  background: url(../image/img_arrow01.svg)no-repeat 50% 50%;
+  background-size: 6px 10px;
+  transform: rotate(180deg);
+}
+.notice .notice-right .cal-table{
+
+}
+.cal-table .calendar{
+  width: 100%;
+  border-collapse: collapse;
+}
+.cal-table .calendar thead tr{
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+.cal-table .calendar thead tr th{
+  font-size: 15px;
+  padding: 5px 0px;
+  background-color: #fff;
+  line-height: 22.5px;
+  font-weight: 400;
+}
+.cal-table .calendar tbody::before{
+  content: '@';
+  display: block;
+  text-indent: -9999px;
+  line-height: 5px;
+}
+.cal-table .calendar tbody tr{}
+.cal-table .calendar tbody tr td{
+}
+.cal-table .calendar tbody tr td span{
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin: 2px auto;
+  background-color: #f7f7f7;
+}
+.sun{
+  color: #ff3333;
+}
+.sat{
+  color: #0062b1;
+}
+.today{
+  color: white;
+  background-color: #2c3035 !important;
+  box-shadow: 0px 2px 4px rgb(0 0 0 / 20%);
 }
 
-#bac-non {
-  background-color: white;
-}
-#bac-red {
-  color: red;
-}
-#bac-blue {
-  color: blue;
-}
 /* gallery */
+.gallery{
+  width: 100%;
+  background:url(../image/img_bottombg.jpg) no-repeat ;
+  background-size: cover;
+}
+.gallery .inner{
+  height: 548px;
+  padding: 70px 0 90px 0; 
+}
 
-/* banner */
+.act-gallery {
+  position: relative;
+  width: 940px;
+}
+.act-gallery h3, .clip-gallery h3{
+  color: #fff;
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+.act-gallery .gallery-box{
+  background-color: #fff;
+  width: 300px;
+  margin-right: 20px;
+}
+.act-gallery .gallery-box.last-child{
+  margin-right: 0;
+}
+.act-gallery .gallery-box a{}
+.act-gallery .gallery-box a .gallery-card{}
+.act-gallery .gallery-box .gallery-card .gallery-pic img{
+  width: 300px;
+  height: 195px;
+  object-fit: cover;
+}
+.act-gallery .gallery-box .gallery-card p {
+  padding: 25px 25px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+.act-gallery .gallery-box .gallery-card span {
+  padding: 0 15px 15px;
+  display: block;
+  text-align: center;
+  font-size: 15px;
+  color: #5f5f5f;
+  line-height: 22.5px;
+}
+.gallery-more {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  padding-left: 22px;
+  font-size: 15px;
+  /* background: url(../image/white_plus.png)no-repeat; */
+  color: #fff;
+}
+.gallery-more2 {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 5px;
+  right: 0px;
+  padding-left: 22px;
+  font-size: 15px;
+  color: #fff;
+}
+.w-plus {
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  left: 4px;
+  top: 1px;
+  font-weight: bold;
+}
 
-/* footer */
+.clip-gallery {
+  width: 400px;
+}
+.clip {
+  width: 400px;
+  overflow: hidden;
+}
+.clip-gallery .gallery-more {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  padding-left: 22px;
+  font-size: 15px;
+  background: url(../image/white_plus.png)no-repeat;
+}
+
+
+/* banner  */
+.banner {
+  width: 100%;
+  height: 107px
+  background-color: #f6f6f6;
+}
+
+
+
