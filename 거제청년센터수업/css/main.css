@@ -396,37 +396,104 @@ h3{
   color: #fff;
 }
 .w-plus {
-  color: #fff;
+  /* color: #fff; */
+  display: block;
+  width: 100px;
+  height: 100px;
   font-size: 14px;
   position: absolute;
   left: 4px;
   top: 1px;
   font-weight: bold;
 }
-
+.w-plus2 {
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  left: 40px;
+  top: 10px;
+  font-weight: bold;
+}
 .clip-gallery {
   width: 400px;
+  position: relative;
 }
 .clip {
   width: 400px;
   overflow: hidden;
 }
+.gallery-more {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  padding: 0 0 0 22px;
+  background: url(../image/white_plus.png)no-repeat 0% 50%;
+  color: #fff;
+  font-size: 15px;
+}
 .clip-gallery .gallery-more {
   position: absolute;
   top: 5px;
   right: 0;
-  padding-left: 22px;
-  font-size: 15px;
-  background: url(../image/white_plus.png)no-repeat;
+  background: url(../image/white_plus.png)no-repeat left center;
 }
-
-
 /* banner  */
 .banner {
   width: 100%;
-  height: 107px
+  height: 107px;
   background-color: #f6f6f6;
 }
-
-
-
+.banner .inner {
+  height: 100%;
+}
+.banner .banner-control {
+  height: 25px;
+  width: 167px;
+  padding: 41px 0;
+}
+.banner .banner-control h3{
+  color: #3d3d3d;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  float: left;
+}
+.banner .banner-control-box {
+  float: right;
+  width: 72px;
+  height: 25px;
+}
+.banner .banner-control-box ul{
+  overflow: hidden;
+}
+.banner .banner-control-box ul li{
+  float: left;
+  width: 24px;
+  height: 25px;
+  border: 1px solid #ececec;
+}
+.banner .banner-control-box .banner-back {
+  background: url(../image/img_banner_prev.png)no-repeat center;
+}
+.banner .banner-control-box .banner-forward {
+  background: url(../image/img_banner_prev.png)no-repeat center;
+  transform: rotate(180deg);
+}
+.banner .banner-control-box .banner-play {
+  background: url(../image/img_banner_play.png);
+}
+/* banner slide */
+.sw-banner {
+  width: 1182px;
+  margin: 25px 0;
+}
+.sw-banner .swiper-slide {
+  float: left;
+  width: 184px;
+  height: 57px;
+  border: 1px solid #e9e9e9;
+  margin-right: 14px;
+}
+.sw-banner .swiper-slide:nth-child(6){
+  margin-right: 0;
+}
