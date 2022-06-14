@@ -6,8 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>거제청년센터 이룸 공식사이트</title>
+  <!-- swiper ndn -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+  <!-- css -->
   <link rel="stylesheet" href="css/main.css">
   <!-- <link rel="stylesheet" href="css/main비교.css"> -->
+
+  <!-- swiper js -->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- jquery cdn -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- javascript -->
+  <script defer src="js/script.js"></script>
 </head>
 
 <body>
@@ -21,14 +33,14 @@
         <li>
           <a href="#">청년센터</a>
           <div class="sub-div">
-          <ul class="sub-menu">
-            <li><a href="#">청년센터소개</a></li>
-            <li><a href="#">프로그램안내</a></li>
-            <li><a href="#">보유도서목록</a></li>
-            <li><a href="#">공간안내</a></li>
-            <li><a href="#">오시는길</a></li>
-          </ul>
-        </div>
+            <ul class="sub-menu">
+              <li><a href="#">청년센터소개</a></li>
+              <li><a href="#">프로그램안내</a></li>
+              <li><a href="#">보유도서목록</a></li>
+              <li><a href="#">공간안내</a></li>
+              <li><a href="#">오시는길</a></li>
+            </ul>
+          </div>
         </li>
         <li>
           <a href="https://geojeyouth.com/web/policy_1">청년정책</a>
@@ -40,59 +52,59 @@
               <li><a href="#">공간안내</a></li>
               <li><a href="#">오시는길</a></li>
             </ul>
-        </div>
+          </div>
         </li>
         <li>
           <a href="#">청년일자리</a>
           <div class="sub-div">
-          <ul class="sub-menu">
-            <li><a href="#">일자리정책</a></li>
-            <li><a href="#">구인 및 구직 등록</a></li>
-            <li><a href="#">채용정보</a></li>
-            <li><a href="#">교육훈련</a></li>
-            <li><a href="#">창업정보</a></li>
-          </ul>
-        </div>
+            <ul class="sub-menu">
+              <li><a href="#">일자리정책</a></li>
+              <li><a href="#">구인 및 구직 등록</a></li>
+              <li><a href="#">채용정보</a></li>
+              <li><a href="#">교육훈련</a></li>
+              <li><a href="#">창업정보</a></li>
+            </ul>
+          </div>
         </li>
         <li>
           <a href="#">사업소개</a>
           <div class="sub-div">
-          <ul class="sub-menu">
-            <li><a href="#">사업안내</a></li>
-            <li><a href="#">사업일정표</a></li>
-          </ul>
-        </div>
+            <ul class="sub-menu">
+              <li><a href="#">사업안내</a></li>
+              <li><a href="#">사업일정표</a></li>
+            </ul>
+          </div>
         </li>
         <li>
           <a href="#">공간예약</a>
           <div class="sub-div">
-          <ul class="sub-menu">
-            <li><a href="#">공간신청</a></li>
-            <li><a href="#">공간신청 현황</a></li>
-          </ul>
-        </div>
+            <ul class="sub-menu">
+              <li><a href="#">공간신청</a></li>
+              <li><a href="#">공간신청 현황</a></li>
+            </ul>
+          </div>
         </li>
         <li>
           <a href="#">커뮤니티</a>
           <div class="sub-div">
-          <ul class="sub-menu">
-            <li><a href="#">이룸소식</a></li>
-            <li><a href="#">자유게시판</a></li>
-            <li><a href="#">활동갤러리</a></li>
-            <li><a href="#">청년뉴스</a></li>
-            <li><a href="#">동영상자료</a></li>
-          </ul>
-        </div>
+            <ul class="sub-menu">
+              <li><a href="#">이룸소식</a></li>
+              <li><a href="#">자유게시판</a></li>
+              <li><a href="#">활동갤러리</a></li>
+              <li><a href="#">청년뉴스</a></li>
+              <li><a href="#">동영상자료</a></li>
+            </ul>
+          </div>
         </li>
         <li>
           <a href="#">청년창업공간(내꿈공간)</a>
           <div class="sub-div">
-          <ul class="sub-menu">
-            <li><a href="#">내꿈공간소개</a></li>
-            <li><a href="#">내꿈공간 대관신청</a></li>
-            <li><a href="#">내꿈공간 대관현황</a></li>
-          </ul>
-        </div>
+            <ul class="sub-menu">
+              <li><a href="#">내꿈공간소개</a></li>
+              <li><a href="#">내꿈공간 대관신청</a></li>
+              <li><a href="#">내꿈공간 대관현황</a></li>
+            </ul>
+          </div>
         </li>
       </ul>
       <div class="gnb-util clear">
@@ -109,8 +121,18 @@
   <!-- //header -->
   <!-- visual -->
   <section class="visual">
-    <div class="swiper-slide">
-      <img src="image/banner_1_20200915_0.jpg" alt="거제청년센터 배경">
+    <div class="swiper sw-visual">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="image/banner_1_20200915_0.jpg" alt="거제청년센터 이룸">
+        </div>
+        <div class="swiper-slide">
+          <img src="image/banner_2_20200915_0.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="image/banner_4_20200915_0.jpg" alt="">
+        </div>
+      </div>
     </div>
   </section>
   <!-- //visual -->
@@ -344,20 +366,23 @@
         </div>
         <div class="gallery-box left last-child">
           <a href="#" class="gallery-card">
-          <div class="gallery-pic">
-            <img src="image/tmb_data_file_55_20220404113553_0.jpg" alt="">
-          </div>
-          <p>3월 인문학 특강 [우리 삶에 철학이 필요한 이유]
-          </p>
-          <span>2022-04-04</span>
-        </a>
-      </div>
-      <a href="#" class="gallery-more">전체보기</a>
+            <div class="gallery-pic">
+              <img src="image/tmb_data_file_55_20220404113553_0.jpg" alt="">
+            </div>
+            <p>3월 인문학 특강 [우리 삶에 철학이 필요한 이유]
+            </p>
+            <span>2022-04-04</span>
+          </a>
+        </div>
+        <a href="#" class="gallery-more">전체보기</a>
       </div>
       <div class="clip-gallery right">
         <h3>동영상갤러리</h3>
         <div class="clip">
-          <iframe width="400" height="330" src="https://www.youtube.com/embed/nOZUjl1ixXc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="400" height="330" src="https://www.youtube.com/embed/nOZUjl1ixXc" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
         </div>
         <a href="#" class="gallery-more">전체보기</a>
       </div>
@@ -405,7 +430,7 @@
         <div class="swiper-slide">
           <img src="image/img_banner09.gif" alt="">
         </div> -->
-        
+
 
       </div>
     </div>
