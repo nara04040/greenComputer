@@ -8,7 +8,66 @@
 ul , li {
   list-style: none;
 }
-a{
+a {
   text-decoration: none;
-  color: black;
+  color: #333;
+}
+img {
+  vertical-align: top;
+  border: 0;
+}
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: -0.32px;
+  line-height: 1.4;
+}
+/* common */
+
+/* header */
+.header{
+  position:relative;
+  display: block;
+  
+}
+
+/* visual */
+.visual{
+  position:relative;
+  display: block;
+}
+
+/* items */
+.items{
+  position:relative;
+  display: block;
+}
+
+/* bevarage */
+.bevarage {
+  position:relative;
+  display: block;
+}
+
+/* franchiser */
+.franchiser{
+  position:relative;
+  display: block;
+}
+
+/* sns */
+.sns{
+  position:relative;
+  display: block;
+}
+
+/* footer */
+.footer{
+  position:relative;
+  display: block;
 }
