@@ -76,6 +76,7 @@ h3{
   position: absolute;
   top: 0px;
   left: 255px;
+  z-index: 9;
 }
 .gnb li{
   position: relative;
@@ -111,7 +112,6 @@ h3{
   pointer-events: none;
   opacity: 0;
   transition: all .5s;
-  z-index: 9;
 }
 .gnb > li:hover .sub-menu {
   opacity: 1;
@@ -219,7 +219,7 @@ h3{
 .sw-visual-control {
   position: absolute;
   bottom: 25px;
-  z-index: 2;
+  z-index: 1;
   left: calc(50% - 46px);
 }
 .sw-visual-control .sw-visual-pagination {
