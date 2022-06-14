@@ -78,7 +78,7 @@ $(document).ready(function () {
       sw_banner.autoplay.start();
     }
   });
-
+  // gotop
   let go_top = $(".gotop");
   go_top.click(function () {
     $("html, body").animate(
