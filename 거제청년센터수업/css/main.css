@@ -80,6 +80,7 @@ h3{
 .gnb li{
   position: relative;
   float: left;
+  background-color: white;
 }
 .gnb > li >a{
   display: block;
@@ -99,14 +100,56 @@ h3{
   left: 50%;
   transform: translateX(-50%);
   background-color: transparent;
-  border-radius: 3px;
   pointer-events: none;
-  
 }
 .sub-menu {
   position: relative;
   top: 30px;
-  /* transform: translateX(-85px); 원래-50% */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  border: 1px solid rgba(255,255,255,0.4);
+  box-shadow: 0px 0px 10px rgba(255,255,255,0.08);
+  border-radius: 3px;
+  pointer-events: none;
+  opacity: 0;
+  transition: all .5s ;
+}
+.gnb > li:hover .sub-menu {
+  opacity: 1;
+  top: 5px;
+  pointer-events: auto;
+}
+.gnb > li .sub-menu > li > a:hover {
+  color: #337ab7;
+}
+.sub-menu > li {
+  border-top: 1px solid #eaeaea;
+}
+.sub-menu > li a {
+  display: block;
+  width: 180px;
+  padding: 12px 15px;
+  font-family: "Open Sans", GmarketSansMedium, GmarketSansLight, GmarketSansBold, '맑은 고딕', '돋움', Dotum, '굴림', Gulim, Sans-serif;
+  font-size: 14.4px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: center;
+  word-break: keep-all;
+}
+/* .sub-div {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  border-radius: 3px;
+  pointer-events: none;
+  
+} */
+/* .sub-menu {
+  position: relative;
+  top: 30px;
   background-color: white;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
   border-radius: 3px;
@@ -136,7 +179,7 @@ h3{
 .sub-menu li a:hover{
   color: #337ab7;
   
-}
+} */
 
 .gnb-util{
   position: absolute;
