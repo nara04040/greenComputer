@@ -1,68 +1,226 @@
 @charset 'utf-8';
-*{
+/* font */
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot);
+  /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   /* outline-style: none; */
 }
-ul , li {
+
+ul,
+li {
   list-style: none;
 }
+
 a {
   text-decoration: none;
   color: #333;
 }
+
 img {
   vertical-align: top;
   border: 0;
 }
+
 html {
-  font-size: 10px;
+  font-size: 16px;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
   font-weight: 400;
   font-size: 12px;
   letter-spacing: -0.32px;
   line-height: 1.4;
+  color: #888;
 }
+
 /* common */
+.clearfix::after {
+  position: relative;
+  content: '';
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+.inner {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 /* header */
-.header{
-  position:relative;
+.header {
+  position: relative;
   display: block;
-  
+  background-color: #000;
+}
+
+.header .inner {
+  height: 100px;
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  display: block;
+  width: 130px;
+  height: 50px;
+  background: url(../images/다운로드.svg) no-repeat center;
+  background-size: contain;
+}
+
+.main-gnb {
+  position: relative;
+  display: block;
+}
+
+.main-gnb .main-sub-gnb {
+  position: absolute;
+  top: 0;
+  left: 15%;
+  transform: translateX(-15%);
+  display: block;
+}
+
+.main-gnb .main-sub-gnb>li {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.main-gnb .main-sub-gnb>li>a {
+  position: relative;
+  display: block;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  font-size: 18px;
+  padding-right: 10px;
+  padding-left: 10px;
+  color: #fff;
+}
+
+.right-gnb {
+  position: relative;
+  display: block;
+}
+
+.right-gnb .right-sub-gnb {
+  position: absolute;
+  top: 0;
+  right: 15%;
+  transform: translateX(15%);
+  display: block;
+}
+.right-gnb .right-sub-gnb>li {
+  position: relative;
+  display: block;
+  float: right;
+}
+.right-gnb .right-sub-gnb>li>span {
+  position: absolute;
+  width: 20px;
+}
+.right-gnb .right-sub-gnb>li>a {
+  position: relative;
+  display: block;
+  width: 70px;
+  height: 100px;
+  line-height: 100px;
+  font-size: 14px;
+  color: #fff;
+}
+.icons {
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  transform: translateY(-45%);
+  display: block;
+}
+
+.material-icons {
+  position: relative;
+  display: block;
+  width: 24px;
+  height: 10px;
+  color: #fff;
+  margin-right: 20px;
 }
 
 /* visual */
-.visual{
-  position:relative;
+.visual {
+  position: relative;
   display: block;
 }
 
 /* banner */
-.banner{
-  position:relative;
+.banner {
+  position: relative;
   display: block;
 }
 
 /* best-item */
 .best-item {
-  position:relative;
+  position: relative;
   display: block;
 }
 
 /* advertisement */
-.advertisement{
-  position:relative;
+.advertisement {
+  position: relative;
   display: block;
 }
 
 /* footer */
-.footer{
-  position:relative;
+.footer {
+  position: relative;
   display: block;
 }
-

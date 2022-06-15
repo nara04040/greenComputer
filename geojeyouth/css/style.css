@@ -2,7 +2,6 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,600,700,800);
-@import url(/web/css/fonts.css);
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 
 @font-face {
@@ -26,11 +25,12 @@
   font-style: normal;
 }
 
+
 * {
-  padding: 0;
-  margin: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
-  /* outline-style: none; */
+  /* outline-style: none;  */
 }
 
 ul,
@@ -38,50 +38,63 @@ li {
   list-style: none;
 }
 
-a {
-  text-decoration: none;
-  color: #333;
-}
-
 img {
   vertical-align: middle;
   border: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* 위쪽은 기본작업입니다. */
+
 html {
-  font-size: 10px;
+  font-size: 16px;
 }
 
 body {
-  font-family: Open Sans, GmarketSansMedium, GmarketSansLight, GmarketSansBold, '맑은 고딕', '돋움', Dotum, '굴림', Gulim, Sans-serif;
-  line-height: 1.5;
+  font-family: 'Open Sans', GmarketSansMedium, GmarketSansLight, GmarketSansBold, '맑은 고딕', '돋움', Dotum, '굴림', Gulim, Sans-serif;
+  font-size: 12px;
   font-size: 15px;
-  letter-spacing: -0.32px;
-
+  line-height: 1.5;
+  letter-spacing: -0.6px;
 }
 
-/* common */
-.inner {
-  max-width: 1400px;
-}
+/* 공통요소(재사용할 내용) */
 
 .clearfix::after {
   content: '';
   display: block;
+  width: 100%;
   clear: both;
 }
 
-/* header */
-.header .innder {
+.inner {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+/* 개별요소 */
+/* 상단 영역 */
+.header {
+  position: relative;
+  display: block;
+  z-index: 9999;
+}
+
+.header .inner {
   height: 98px;
 }
 
 .logo {
-  position: relative;
-  /* logo는 absolute로 실행 */
+  position: absolute;
   left: 0;
   top: 50%;
-  transform: translateX(-50%);
+  transform: translateY(-50%);
   display: block;
 }
 
@@ -90,44 +103,102 @@ body {
   display: block;
 }
 
-.main-menu {
+.menu {
   position: absolute;
   left: 50%;
-  top: 0;
   transform: translateX(-50%);
+  top: 0;
+
   display: block;
-  width: 500px;
-  background-color: pink;
-  overflow: hidden;
-  margin: 0 auto;
-  /* margin 0 auto로 가운데정렬을 할려면 너비를 알아야한다. */
+
+  white-space: nowrap;
+  font-size: 0;
 }
 
-.main-menu > li {
+.menu>li {
   position: relative;
-  display: block;
-  float: left;
+  display: inline-block;
 }
 
-.sub-menu {
+.mainmenu {
+  position: relative;
+  display: block;
+  height: 98px;
+  text-align: center;
+  line-height: 98px;
+  padding: 0 18px;
+  font-size: 17px;
+  color: #333;
+}
+
+.submenu {
+  position: absolute;
+  left: 50%;
+  top: 70px;
+  transform: translateX(-50%) translateY(10px);
+  display: block;
+  visibility: hidden;
+  min-width: 182px;
+  opacity: 0;
+  transition: all 0.3s;
+
+  background: #fff;
+  border: 1px solid rgba(255, 255, 255, .3);
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 8%);
+
+}
+
+.menu>li:hover .submenu {
+  z-index: 999;
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.submenu li {
   position: relative;
   display: block;
 }
-.sub-menu > li {
+
+.submenu li a {
   position: relative;
   display: block;
+
+  text-align: center;
+  white-space: nowrap;
+  font-size: 14px;
+  color: #333;
+  font-weight: 400;
+  line-height: 46px;
+  border-bottom: 1px solid #eaeaea;
 }
-.sub-menu > li >a{
-  position: relative;
-  display: block;
+
+.submenu li:last-child a {
+  border: none;
 }
+
+.menu>li:hover .mainmenu {
+  color: #2578de;
+}
+
+.menu a:hover {
+  color: #2578de;
+}
+
 .member {
   position: absolute;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
   display: block;
-  overflow: hidden;
+}
+
+
+.member-list {
+  position: relative;
+  display: block;
+  float: left;
 }
 
 .member-list li {
@@ -143,52 +214,68 @@ body {
   display: block;
   font-size: 14px;
   color: #666;
+
 }
 
-.memober-more {
+
+.member-more {
   position: relative;
   display: block;
   width: 45px;
   height: 45px;
+
   float: left;
   font-size: 0;
-  background: url(../images/~~~~) no-repeat center;
+  background: url('../images/img_allmenu.png') no-repeat center;
   border: 0;
+  cursor: pointer;
 }
 
-/* visual */
+
+/* 비주얼 영역 */
 .visual {
   position: relative;
   display: block;
+  background-color: greenyellow;
+  cursor: pointer;
+  visibility: hidden;
 }
 
-/* quick-menu */
+.visual .inner {
+  height: 474px;
+}
+
+
+/* 퀵메뉴 영역 */
 .quick-menu {
   position: relative;
   display: block;
+  height: 400px;
+  background-color: aqua;
 }
 
-
-/* community */
+/* 커뮤니티 영역 */
 .community {
   position: relative;
   display: block;
 }
 
-/* gallery */
+/* 갤러리 영역 */
 .gallery {
   position: relative;
   display: block;
+
 }
 
-/* banner */
+/* 배너 영역 */
 .banner {
   position: relative;
   display: block;
 }
 
-/* footer */
+/* 하단 영역 */
 .footer {
   position: relative;
   display: block;
+
 }
