@@ -1,73 +1,175 @@
 @charset 'utf-8';
-*{
+
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   /* outline-style: none; */
 }
-ul , li {
+
+@import url('nanumsquare/nanumsquare.css');
+
+ul,
+li {
   list-style: none;
 }
+
 a {
   text-decoration: none;
   color: #333;
 }
+
 img {
   vertical-align: top;
   border: 0;
 }
+
 html {
   font-size: 10px;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'NanumSquare', 'Malgun Gothic', '맑은 고딕', "돋움", Verdana, sans-serif;
   font-weight: 400;
-  font-size: 12px;
-  letter-spacing: -0.32px;
-  line-height: 1.4;
+  font-size: 14px;
+  letter-spacing: -0.5px;
+  line-height: 1.6;
+  color: #888;
 }
-/* common */
+
+/* common(컴퍼넌트=라이브러리=재활용) */
+.inner {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* float를 해제해준다 */
+.clearfix::after {
+  content: '';
+  position: relative;
+  display: block;
+  clear: both;
+  width: 100%;
+}
 
 /* header */
-.header{
-  position:relative;
+.header {
+  position: relative;
   display: block;
-  
+  z-index: 9999;
+}
+
+.header .inner {
+  height: 130px;
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+  top: 65px;
+  display: block;
+  width: 200px;
+  height: 47px;
+  background: url(../images/logo.png) no-repeat center;
+  background-size: contain;
+  font-size: 0;
+}
+
+.gnb {
+  position: absolute;
+  right: 0;
+  top: 75px;
+  display: block;
+}
+
+.h-sns {
+  position: relative;
+  right: 0;
+  top: 20px;
+  display: block;
+}
+
+.h-sns-list {
+  position: relative;
+  display: block;
+  float: right;
+  overflow: hidden;
+}
+
+.h-sns-list li {
+  position: relative;
+  display: block;
+  float: left;
+  margin-left: 8px;
+}
+
+.h-sns-list li:first-child {
+  margin-left: 0;
+}
+
+.h-sns-list li a {
+  position: relative;
+  display: block;
+  width: 23px;
+  height: 23px;
+  font-size: 0;
+}
+
+.icon-bg {
+  background: url(../images/KakaoTalk_20220615_165527742.png) no-repeat center;
+  background-size: cover;
+}
+
+.icon-is {
+  background: url(../images/KakaoTalk_20220615_165541305.png) no-repeat center;
+  background-size: cover;
+}
+
+.icon-fb {
+  background: url(../images/sns_facebook.png) no-repeat center;
+  background-size: cover;
 }
 
 /* visual */
-.visual{
-  position:relative;
+.visual {
+  position: relative;
   display: block;
+  width: 100vw;
+  height: 70vw;
+  max-height: 700px;
+  background: #84cbc7;
+
 }
 
 /* items */
-.items{
-  position:relative;
+.items {
+  position: relative;
   display: block;
 }
 
 /* bevarage */
 .bevarage {
-  position:relative;
+  position: relative;
   display: block;
 }
 
 /* franchiser */
-.franchiser{
-  position:relative;
+.franchiser {
+  position: relative;
   display: block;
 }
 
 /* sns */
-.sns{
-  position:relative;
+.sns {
+  position: relative;
   display: block;
 }
 
 /* footer */
-.footer{
-  position:relative;
+.footer {
+  position: relative;
   display: block;
 }
