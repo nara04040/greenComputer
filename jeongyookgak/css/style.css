@@ -152,6 +152,7 @@ body {
   position: relative;
   display: block;
 }
+
 .column-line {
   position: absolute;
   top: 50%;
@@ -166,6 +167,7 @@ body {
   font-weight: bold;
 
 }
+
 .right-gnb .right-sub-gnb {
   position: absolute;
   top: 0;
@@ -173,15 +175,18 @@ body {
   transform: translateX(15%);
   display: block;
 }
+
 .right-gnb .right-sub-gnb>li {
   position: relative;
   display: block;
   float: right;
 }
+
 .right-gnb .right-sub-gnb>li>span {
   position: absolute;
   width: 20px;
 }
+
 .right-gnb .right-sub-gnb>li>a {
   position: relative;
   display: block;
@@ -191,6 +196,7 @@ body {
   font-size: 14px;
   color: #fff;
 }
+
 .icons {
   position: absolute;
   top: 50%;
@@ -214,6 +220,9 @@ body {
   display: block;
 }
 
+.v-inner {
+  
+}
 /* banner */
 .banner {
   position: relative;

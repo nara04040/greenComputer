@@ -236,16 +236,32 @@ body {
 .visual {
   position: relative;
   display: block;
-  background-color: greenyellow;
-  cursor: pointer;
-  visibility: hidden;
+  height: 477px;
 }
 
-.visual .inner {
-  height: 474px;
+.sw-visual {
+  width: 100%;
+  height: 100%;
 }
 
-
+.sw-visual a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.vs-1 {
+  background: url(../images/banner_1_20200915_0.jpg)no-repeat center;
+  background-size: cover;
+}
+.vs-2 {
+  background: url(../images/banner_2_20200915_0.jpg)no-repeat center;
+  background-size: cover;
+}
+.vs-3 {
+  background: url(../images/banner_4_20200915_0.jpg)no-repeat center;
+  background-size: cover;
+}
 /* 퀵메뉴 영역 */
 .quick-menu {
   position: relative;
