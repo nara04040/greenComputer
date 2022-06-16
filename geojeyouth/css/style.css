@@ -56,7 +56,6 @@ html {
 body {
   font-family: 'Open Sans', GmarketSansMedium, GmarketSansLight, GmarketSansBold, '맑은 고딕', '돋움', Dotum, '굴림', Gulim, Sans-serif;
   font-size: 12px;
-  font-size: 15px;
   line-height: 1.5;
   letter-spacing: -0.6px;
 }
@@ -95,6 +94,10 @@ body {
   top: 50%;
   transform: translateY(-50%);
   display: block;
+  width: 124px;
+  height: 40px;
+  background: url(../images/img_logo.png) no-repeat center;
+  background-size: contain;
 }
 
 .gnb {
@@ -107,9 +110,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   top: 0;
-
   display: block;
-
   white-space: nowrap;
   font-size: 0;
 }
@@ -126,7 +127,7 @@ body {
   text-align: center;
   line-height: 98px;
   padding: 0 18px;
-  font-size: 17px;
+  font-size: 19px;
   color: #333;
 }
 
@@ -226,11 +227,57 @@ body {
   float: left;
   font-size: 0;
   background: url('../images/img_allmenu.png') no-repeat center;
+  background-size: cover;
   border: 0;
   cursor: pointer;
 }
 
+/* 상단pc버전 */
+@media all and (max-width:1400px) {
+  .header .inner {
+    height: 90px;
+  }
+  .logo {
+    width: 123px;
+    height: 40px;
+  }
 
+  .menu {
+    left: 55%;
+    top: 28px;
+  }
+
+  .mainmenu {
+    font: 17px;
+    line-height: 65px;
+    height: 65px;
+  }
+  .submenu{
+    top:60px;
+  }
+  .member {
+    top: 20%;
+  }
+
+  .member-more {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    margin-top: 5px;
+  }
+
+}
+@media all and (max-width:1000px) {
+  .header .inner {
+    height: 70px;
+  }
+  .gnb {
+    display: none;
+  }
+  .member{
+    display: none;
+  }
+}
 /* 비주얼 영역 */
 .visual {
   position: relative;
@@ -309,8 +356,12 @@ body {
   background: url('../images/play.png') no-repeat center;
 }
 
-
-
+/* pc반응형 */
+@media all and (max-width: 1400px) {
+  .visual {
+    height: 50vw;
+  }
+}
 
 /* 퀵메뉴 영역 */
 .quick-menu {
