@@ -180,8 +180,8 @@ body {
   display: block;
   width: 55px;
   height: 98px;
-  background: url(../images/btn_arrow.png) no-repeat ;
-  background-position: 0 0;
+  background: url(../images/btn_arrow.png) no-repeat left top;
+  background-size: cover;
   z-index: 9;
   border: 0;
   cursor: pointer;
@@ -189,17 +189,36 @@ body {
 
 .sw-visual-next {
   position: absolute;
-  right:15%;
+  right: 15%;
   top: 50%;
   transform: translateY(-50%);
   display: block;
   width: 55px;
   height: 98px;
-  background: url(../images/btn_arrow.png) no-repeat ;
-  background-position: -55px 0;
+  background: url(../images/btn_arrow.png) no-repeat right top;
+  background-size: cover;
+
   z-index: 9;
   border: 0;
   cursor: pointer;
+}
+
+/* visual pc */
+@media all and (max-width:1000px) {
+  .visual {
+    height: 70vw;
+  }
+
+  .sw-visual-next {
+    width: 5.5vw;
+    height: 9.8vw;
+
+  }
+
+  .sw-visual-prev {
+    width: 5.5vw;
+    height: 9.8vw;
+  }
 }
 
 
