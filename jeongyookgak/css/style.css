@@ -152,7 +152,20 @@ body {
   position: relative;
   display: block;
 }
+.column-line {
+  position: absolute;
+  top: 50%;
+  right: 53%;
+  transform: translateY(-50%);
+  display: block;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  text-align: center;
+  line-height: 20px;
+  font-weight: bold;
 
+}
 .right-gnb .right-sub-gnb {
   position: absolute;
   top: 0;
