@@ -6,6 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>마시그래이</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="js/swiper/swiper.min.css">
+  <script src="js/swiper/swiper.js"></script>
+
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js"></script>
 </head>
@@ -29,7 +33,23 @@
     </header>
     <!-- visual -->
     <section class="visual">
-      <div class="sw-visual-slide"></div>
+      <div class="swiper-container sw-visual">
+        <!-- 슬라이드 내용 -->
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#" class="sw-visual-1"></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="sw-visual-2"></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="sw-visual-3"></a>
+          </div>
+        </div>
+        <!-- 슬라이드 좌우버튼 -->
+        <button class="sw-visual-prev"></button>
+        <button class="sw-visual-next"></button>
+      </div>
     </section>
     <!-- items -->
     <section class="items">
