@@ -1,6 +1,6 @@
 $(document).ready();
 
-window.onload = function () {
+// window.onload = function () {
     new Swiper('.sw-visual', {
         loop: true,
         autoplay: {
