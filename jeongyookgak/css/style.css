@@ -252,7 +252,18 @@ body {
   float: left;
 }
 
+.sw-banner {
+  width: 100%;
+  height: 100%;
+}
+
 .swiper-container .swiper-wrapper {
+  position: relative;
+  display: block;
+  width: 600px;
+  height: 180px;
+}
+.sw-banner>a {
   position: relative;
   display: block;
   width: 600px;
@@ -262,49 +273,54 @@ body {
 .swiper-slider-1 {
   position: relative;
   display: block;
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
   background: url(../images/202206_event_summer-pc-banner-2.png) no-repeat center;
   background-size: contain;
 }
+
 .swiper-slider-2 {
   position: relative;
   display: block;
   width: 100%;
   height: 100%;
-  background: url(../images/202206_event_summer-pc-banner-2.png) no-repeat center;
+  background: url(../images/banner-slide2.png) no-repeat center;
   background-size: contain;
 }
+
 .swiper-slider-3 {
   position: relative;
   display: block;
   width: 100%;
   height: 100%;
-  background: url(../images/202206_event_summer-pc-banner-2.png) no-repeat center;
+  background: url(../images/banner-slide3.png) no-repeat center;
   background-size: contain;
 }
+
 .swiper-slider-4 {
   position: relative;
   display: block;
   width: 100%;
   height: 100%;
-  background: url(../images/202206_event_summer-pc-banner-2.png) no-repeat center;
+  background: url(../images/banner-slide4.png) no-repeat center;
   background-size: contain;
 }
+
 .swiper-slider-5 {
   position: relative;
   display: block;
   width: 100%;
   height: 100%;
-  background: url(../images/202206_event_summer-pc-banner-2.png) no-repeat center;
+  background: url(../images/banner-slide5.png) no-repeat center;
   background-size: contain;
 }
+
 .swiper-slider-6 {
   position: relative;
   display: block;
   width: 100%;
   height: 100%;
-  background: url(../images/202206_event_summer-pc-banner-2.png) no-repeat center;
+  background: url(../images/banner-slide6.png) no-repeat center;
   background-size: contain;
 }
 
@@ -494,6 +510,7 @@ body {
   position: relative;
   display: block;
 }
+
 .left-desc {
   position: absolute;
   top: 5px;
@@ -511,7 +528,8 @@ body {
   height: 32px;
   margin: 20px 0;
 }
-.customer-service{
+
+.customer-service {
   position: absolute;
   top: 0;
   right: 0;
@@ -519,23 +537,29 @@ body {
   text-align: right;
   margin-top: 10px;
 }
+
 .cs {
   font-size: 14px;
   color: #000;
   font-weight: bold;
 }
+
 .phone {
   font-size: 24px;
   color: #000;
   font-weight: bold;
 }
+
 .open-time {
   margin-bottom: 10px;
 }
-.kakao>a, .e-mail>a {
+
+.kakao>a,
+.e-mail>a {
   color: skyblue;
 }
-.cs-btn button{
+
+.cs-btn button {
   position: relative;
   display: block;
   padding: 5px;
@@ -545,6 +569,7 @@ body {
   border: 1px solid #333;
   border-radius: 5px;
 }
+
 .cs-btn button:last-child {
   margin-right: 0;
 }
