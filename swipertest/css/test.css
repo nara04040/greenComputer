@@ -1,0 +1,90 @@
+@charset 'utf-8';
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* outline-style: none;  */
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: middle;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* 위쪽은 기본작업입니다. */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Open Sans', GmarketSansMedium, GmarketSansLight, GmarketSansBold, '맑은 고딕', '돋움', Dotum, '굴림', Gulim, Sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: -0.6px;
+}
+
+/* 공통요소(재사용할 내용) */
+
+.clearfix::after {
+    content: '';
+    position: relative;
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.inner {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 1200px;
+
+}
+
+/* event */
+.event {
+    position: relative;
+    display: block;
+    width: 300px;
+    height: 300px;
+}
+
+.sw-event {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide-1 {
+    background: url(../images/banner-slide2.png) no-repeat center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide-2 {
+    background: url(../images/banner-slide3.png) no-repeat center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide-3 {
+    background: url(../images/banner-slide4.png) no-repeat center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+}
