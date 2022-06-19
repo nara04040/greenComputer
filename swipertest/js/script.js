@@ -1,15 +1,12 @@
 window.onload = function () {
-    new Swiper('.sw-event', {
+    let swiper = new Swiper('.swiper-container', {
+        autoplay: true,
         loop: true,
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
-        speed: 1000,
         navigation: {
-            prevEl: '.sw-visual-prev',
-            nextEl: '.sw-visual-next',
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         }
-    });
+
+    })
 
 };
