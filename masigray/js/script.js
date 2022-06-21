@@ -16,7 +16,7 @@ window.onload = function () {
     // items 슬라이드
     new Swiper('.sw-items', {
         loop: true,
-        spped: 800,
+        speed: 800,
         autoplay: {
             delay: 2500,
             disableOnInteraction: false,

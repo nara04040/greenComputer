@@ -116,6 +116,13 @@
                         <div class="swiper-slide-7 swiper-slide">
                         </div>
                     </div>
+                    <div class="sw-control-box">
+                        <div class="swiper-control">
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
                 </div>
                 <div class="event-free-coupon">
                 </div>
@@ -125,11 +132,16 @@
         <section class="best-items">
             <div class="inner">
                 <h2 class="items-title">정육각 베스트 제품</h2>
-                <div class="items-list-wrapper">
+                <div class="items-list-wrapper clearfix">
                     <ul class="best-items-list">
                         <li>
                             <a href="#">
                                 <div class="items-img-1"></div>
+                                <div class="cart-img">
+                                    <span class="material-icons-outlined">
+                                        shopping_cart
+                                    </span>
+                                </div>
                             </a>
                             <h3>초신선 돼지 삼겹살 구이용</h3>
                             <p>기준가 23,400원/600g</p>
@@ -137,37 +149,62 @@
                         <li>
                             <a href="#">
                                 <div class="items-img-2"></div>
+                                <div class="cart-img">
+                                    <span class="material-icons-outlined">
+                                        shopping_cart
+                                    </span>
+                                </div>
                             </a>
-                            <h3>초신선 돼지 삼겹살 구이용</h3>
-                            <p>기준가 23,400원/600g</p>
+                            <h3>초신선 닭볶음탕</h3>
+                            <p>기준가 6,700원/950g</p>
                         </li>
                         <li>
                             <a href="#">
                                 <div class="items-img-3"></div>
+                                <div class="cart-img">
+                                    <span class="material-icons-outlined">
+                                        shopping_cart
+                                    </span>
+                                </div>
                             </a>
-                            <h3>초신선 돼지 삼겹살 구이용</h3>
-                            <p>기준가 23,400원/600g</p>
+                            <h3>초신선 등심 돈까스</h3>
+                            <p>기준가 11,800원/770g</p>
                         </li>
                         <li>
                             <a href="#">
                                 <div class="items-img-4"></div>
+                                <div class="cart-img">
+                                    <span class="material-icons-outlined">
+                                        shopping_cart
+                                    </span>
+                                </div>
                             </a>
-                            <h3>초신선 돼지 삼겹살 구이용</h3>
-                            <p>기준가 23,400원/600g</p>
+                            <h3>초신선 동물복지 무항생제 유정란</h3>
+                            <p>기준가 7,800원/12구<p>
                         </li>
                         <li>
                             <a href="#">
                                 <div class="items-img-5"></div>
+                                <div class="cart-img">
+                                    <span class="material-icons-outlined">
+                                        shopping_cart
+                                    </span>
+                                </div>
                             </a>
-                            <h3>초신선 돼지 삼겹살 구이용</h3>
-                            <p>기준가 23,400원/600g</p>
+                            <h3>초신선 무항생제 우유</h3>
+                            <p>기준가 3,600원/900ml</p>
                         </li>
                         <li>
                             <a href="#">
                                 <div class="items-img-6"></div>
+                                <div class="cart-img">
+                                    <span class="material-icons-outlined">
+                                        shopping_cart
+                                    </span>
+                                </div>
                             </a>
-                            <h3>초신선 돼지 삼겹살 구이용</h3>
-                            <p>기준가 23,400원/600g</p>
+                            <h3>초신선 무항생제 이유식용 한우 우둔 다짐육</h3>
+                            <p>기준가 15,300원/180g</p>
                         </li>
                     </ul>
                 </div>
@@ -176,13 +213,13 @@
         <!-- ad -->
         <section class="ad">
             <div class="inner">
-                <div class="ad-img">
-                    <a href="#"></a>
-                </div>
+                <a href="#" class="ad-img">
+                </a>
             </div>
         </section>
         <!-- footer -->
         <section class="footer">
+            <div class="f-line"></div>
             <div class="inner">
                 <div class="f-top clearfix">
                     <div class="company-law clearfix">
@@ -191,12 +228,14 @@
                         <span>개인정보처리방침</span>
                     </div>
                     <div class="app-icons clearfix">
-                        <button>정육각앱설치</button>
-                        <a href="">
+                        <button><a href="#">
+                                <img src="images/app_img.svg" alt="">
+                                정육각앱설치</a></button>
+                        <a href="#">
                             <span class="kakao-icon">
                             </span>
                         </a>
-                        <a href="">
+                        <a href="#">
                             <span class="ins-icon">
                             </span>
                         </a>
@@ -205,17 +244,34 @@
                 <div class="f-bottom">
                     <div class="bottom-left">
                         <div class="b-logo">
-                            <a href="#" class="b-logo-img"></a>
                         </div>
                         <div class="companey-addr">
+                            <p>
+                                (주)정육각 대표이사: 김재연|주소: 경기도 김포시 고촌읍 아라육로57번길 126 <br>
+                                사업자등록번호 : 224-87-00271 <a href="#">[조회]</a>|통신판매업신고번호: 2021-경기김포-0668 <br>
+                                개인정보관리책임자: 박준태(privacy@yookgak.com) <br><br><br>
+                                © 2021 Jeongyookgak Inc. All rights reserved.
+                            </p>
                         </div>
                     </div>
                     <div class="bottom-right">
                         <div class="sc">
-
+                            <p class="cs">고객센터</p>
+                            <p class="phone">1800-0658</p>
+                            <p class="open-time">
+                                평일: 08:30 - 17:30 <br>
+                                점심: 12:30 - 13:30 <br>
+                                (토, 일 및 공휴일 휴무)
+                            </p>
                         </div>
-                        <div class="companey-email"></div>
-                        <div class="bottom-btn"></div>
+                        <div class="companey-email">
+                            <p>카카오톡: <a href="#">@정육각</a></p>
+                            <p>이메일 : <a href="#">help@yookgak.com</a></p>
+                        </div>
+                        <div class="bottom-btn">
+                            <button>자주묻는질문</button>
+                            <button>1:1문의</button>
+                        </div>
                     </div>
                 </div>
             </div>

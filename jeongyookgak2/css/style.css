@@ -49,7 +49,7 @@ body {
     position: relative;
     display: block;
     margin: 0 auto;
-    width: 1200px;
+    max-width: 1200px;
 
 }
 
@@ -59,12 +59,14 @@ body {
     display: block;
     width: 100%;
     background-image: radial-gradient(circle at 50% 527%, #ff896a, #e23000 119%);
+    /* background: url('../images/top_banner_new-2x.1c59418.png') no-repeat center; */
+    background-size: contain;
 }
 
 .top-ad .inner {
     position: relative;
     display: block;
-    height: 70px;
+    height: 60px;
 }
 
 .top-ad .inner a {
@@ -92,20 +94,35 @@ body {
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
     display: block;
+    width: 50%;
+    text-decoration: underline;
+    text-decoration-thickness: .5px;
+    text-underline-position: under;
+    background-size: 20%;
+
 }
 
 .ad-first-exit {
-    position: absolute;
+    position: relative;
     top: 50%;
     transform: translateY(-50%);
     right: 0;
     display: block;
+    float: right;
 }
-
-.material-icons {
-    display: inline-block;
+.inner .ad-first-exit > a {
+    display: block;
+    font-size: 14px;
 }
-
+.ad-first-exit span {
+    position: absolute;
+    top: 48%;
+    transform: translateY(-50%);
+    left: 30px;
+    font-size: 16px;
+    font-weight: 100;
+    color: #fff;
+}
 /* header */
 .header {
     position: relative;
@@ -116,6 +133,9 @@ body {
 }
 
 .header .inner {
+    position: relative;
+    display: block;
+    width: 100%;
     height: 100%;
     padding-top: 24px;
 }
@@ -174,7 +194,7 @@ body {
 .right-header {
     position: relative;
     display: block;
-    width: 35%;
+    width: 30%;
     height: 100%;
     float: right;
 }
@@ -287,10 +307,11 @@ body {
 .event {
     position: relative;
     display: block;
-    height: 300px;
+    height: 100%;
 }
 
 .event .inner {
+    width: 100%;
     height: 300px;
 }
 
@@ -306,7 +327,7 @@ body {
 }
 
 .swiper {
-    width: 600px;
+    width: 50%;
     height: 100%;
 }
 
@@ -359,6 +380,46 @@ body {
     height: 100%;
 }
 
+.swiper-control {
+    position: absolute;
+    bottom: 67px;
+    left: 0;
+    width: 100px;
+    height: 15px;
+}
+
+.swiper-button-next {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url('../images/arrow.svg') no-repeat center;
+    background-size: cover;
+    color: #000;
+    cursor: pointer;
+}
+
+.swiper-button-prev {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url('../images/arrow.svg') no-repeat center;
+    transform: rotate(180deg);
+    background-size: cover;
+    color: #000;
+    cursor: pointer;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+    display: none;
+}
+
+/* :root {
+    --swiper-navigation-size: 16px
+} */
+.swiper-pagination-fraction {
+    bottom: 4px;
+}
+
 .event-free-coupon {
     position: absolute;
     top: 0;
@@ -366,7 +427,7 @@ body {
     display: block;
     background: url(../images/freshplan.9fe4775.png) no-repeat center;
     background-size: contain;
-    width: 600px;
+    width: 50%;
     height: 100%;
 
 }
@@ -375,7 +436,8 @@ body {
 .best-items {
     position: relative;
     display: block;
-    height: 1200px;
+    height: 100%;
+    margin-bottom: 20px;
 }
 
 .best-items h2 {
@@ -402,7 +464,7 @@ body {
     display: block;
     width: 100%;
     height: 100%;
-    background-color: yellow;
+
 }
 
 .best-items-list {
@@ -427,6 +489,16 @@ body {
     width: 373px;
     height: 410px;
     background-color: #f9f7f8;
+}
+
+.best-items-list li h3 {
+    font-size: 18px;
+}
+
+.best-items-list li p {
+    font-size: 16px;
+    color: #9b9b9b;
+
 }
 
 .items-img-1 {
@@ -501,12 +573,40 @@ body {
     height: 250px;
 }
 
+.cart-img {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    display: block;
+    width: 68px;
+    height: 68px;
+    border-radius: 68px;
+    background-color: #fff;
+    box-shadow: 0 25px 10px -15px rgb(0 0 0 / 12%);
+}
+
+.cart-img:hover {
+    background-color: #333;
+}
+
+.cart-img span {
+    display: block;
+    text-align: center;
+    font-size: 38px;
+    line-height: 68px;
+}
+
+.cart-img:hover span {
+    color: #fff;
+}
 
 /* ad */
 .ad {
     position: relative;
     display: block;
-    height: 220px;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
 }
 
 .ad .inner {
@@ -527,21 +627,16 @@ body {
     position: relative;
     display: block;
     margin-top: 200px;
-    height: 300px;
-    border-top: 1px solid #eee;
-    background-color: yellow;
+    border-top: 2px solid #eee;
 }
 
-.footer .inner {
-    height: 300px;
-}
+.footer .inner {}
 
 .f-top {
     position: relative;
     display: block;
     width: 100%;
     height: 60px;
-    background-color: #e23000;
 }
 
 .company-law {
@@ -565,20 +660,31 @@ body {
     position: relative;
     display: block;
     float: right;
-    padding: 10px;
+    padding-top: 15px;
+
 }
+
 .app-icons button {
+    margin-top: -5px;
+    margin-right: 20px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #fafafa;
     float: left;
-    
+
 }
+
 .kakao-icon {
     display: block;
-    background: url(../images/kakao.svg) no-repeat center;
+    background: url(../images/kakao_1.svg) no-repeat center;
     background-size: cover;
     width: 24px;
     height: 24px;
     float: left;
+    margin-right: 20px;
+
 }
+
 .ins-icon {
     display: block;
     background: url(../images/ins.svg) no-repeat center;
@@ -586,4 +692,87 @@ body {
     width: 24px;
     height: 24px;
     float: left;
+
+}
+
+.f-line {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    height: 1px;
+    border: 1px solid #eee;
+}
+
+.f-bottom {
+    position: relative;
+    display: block;
+    height: 100%;
+}
+
+.bottom-left {
+    position: relative;
+    display: block;
+    width: 50%;
+    height: 100%;
+}
+
+.b-logo {
+    display: block;
+    width: 82px;
+    height: 32px;
+    margin: 15px 0;
+    background: url('../images/f-logo.svg') no-repeat center;
+    background-size: cover;
+}
+
+.companey-addr {}
+
+.bottom-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    text-align: right;
+    float: right;
+}
+
+.cs {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.phone {
+    font-size: 24px;
+    font-weight: 700;
+    margin: -10px 0;
+}
+
+.open-time {
+    font-size: 12px;
+    color: #757575;
+    line-height: 15px;
+    margin-top: -3px;
+}
+
+.companey-email {
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.companey-email a {
+    color: #4bb8ce;
+}
+
+.bottom-btn {
+    margin-bottom: 10px;
+}
+
+.bottom-btn button {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid #212121;
+    border-radius: 4px;
+    cursor: pointer;
 }
