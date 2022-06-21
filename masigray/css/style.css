@@ -288,6 +288,97 @@ body {
   display: block;
 }
 
+.sw-items {
+  width: 100%;
+  height: 100%;
+}
+
+.sw-items .swiper-slide a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.items-1 {
+  background: url('../images/mb02_bg.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.items-2 {
+  background: url('../images/mb03_bg.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.items-3 {
+  background: url('../images/mb04_bg.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.items-4 {
+  background: url('../images/mb05_bg.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.items-5 {
+  background: url('../images/mb06_bg.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.sw-items-prev {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  width: 14px;
+  height: 23px;
+  background: url("../images/btn_arrow2.png") no-repeat 0 0;
+  z-index: 9;
+  border: 0;
+  cursor: pointer;
+}
+
+.sw-items-next {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  width: 14px;
+  height: 23px;
+  background: url("../images/btn_arrow2.png") no-repeat right top;
+  z-index: 9;
+  border: 0;
+  cursor: pointer
+}
+
+.sw-items-control {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+  display: block;
+  z-index: 9;
+}
+
+.sw-items-pg .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  opacity: .5;
+  margin: 5px;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+
+.sw-items-pg .swiper-pagination-bullet-active {
+  width: 30px;
+  opacity: 1;
+
+}
+
+/* 링크 */
 .items-box:nth-child(3) {
   position: relative;
   display: block;
@@ -303,12 +394,12 @@ body {
 }
 
 .items-box:nth-child(3) a:first-child {
-  background: #f3f3f3 url(../images/franchise_ico01.png) no-repeat center 60px;
+  background: #f3f3f3 url('../images/franchise_ico01.png') no-repeat center 60px;
 
 }
 
 .items-box:nth-child(3) a:last-child {
-  background: #fff url(../images/franchise_ico02.png) no-repeat center 60px;
+  background: #fff url('../images/franchise_ico02.png') no-repeat center 60px;
 }
 
 .items-box:nth-child(3) a h3 {
@@ -338,7 +429,17 @@ body {
 }
 
 .items-box:nth-child(4) {
-  background: #292929 url(../images/store01.jpg) no-repeat left center;
+
+}
+
+.search-left {
+  position: relative;
+  display: block;
+  width: 50%;
+  height: 100%;
+  float: left;
+  background: #292929 url("../images/store01.jpg") no-repeat left center;
+  background-size: cover;
 }
 
 .search {
@@ -346,8 +447,10 @@ body {
   display: block;
   width: 50%;
   height: 100%;
-  text-align: center;
+  background-color: #292929;
   float: right;
+  text-align: center;
+  padding: 0 35px;
 }
 
 .search h2 {
@@ -378,15 +481,66 @@ body {
   color: #ba9b65;
   font-weight: 400;
   line-height: 20px;
+  margin-bottom: 25px;
 }
 
 .search-form {
   position: relative;
   display: block;
-  width: 147px;
-  height: 38px;
+  width: 100%;
+  height: 39px;
+  background-color: #3e3e3e;
+  padding-right: 39px;
 }
 
+.search-form label {
+  display: none;
+}
+
+.shop {
+  position: relative;
+  display: block;
+  width: 100%;
+  line-height: 39px;
+  color: #fff;
+  background-color: transparent;
+  border: 0;
+  padding: 0 10px;
+}
+
+.search-bt {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 39px;
+  height: 39px;
+  background: url(../images/btn_store.gif) no-repeat center;
+  border: 0;
+  font-size: 0;
+}
+
+/* items pc영역 */
+/* items 반응형 */
+@media all and (max-width:1000px) {
+  .items {
+    padding: 10vw 0;
+  }
+}
+
+@media all and (max-width:800px) {
+  .items-box:nth-child(3) a p{
+    font-size: 14px;
+  }
+}
+@media all and (max-width:640px) {
+  .items-box{
+    width: 100%; 
+  }
+  .items-box:nth-child(3) a p{
+    font-size: 16px;
+  }
+}
 
 /* bevarage */
 .bevarage {

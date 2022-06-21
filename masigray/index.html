@@ -69,7 +69,36 @@
           </a>
         </div>
         <div class="items-box">
-
+          <!-- item slide -->
+          <div class="swiper-container sw-items">
+            <!-- 기본형: 슬라이드 내용 -->
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#" class="items-1"></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="items-2"></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="items-3"></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="items-4"></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="items-5"></a>
+                </div>
+            </div>
+            <!-- 이동버튼 -->
+            <button class="sw-items-prev"></button>
+            <button class="sw-items-next"></button>
+            
+            <!-- 컨트롤 -->
+            <div class="sw-items-control">
+              <!-- pagination -->
+              <div class="sw-items-pg"></div>
+            </div>
+          </div>
         </div>
         <div class="items-box">
           <a href="#">
@@ -84,6 +113,8 @@
               마시그래이에 대해 알아보세요.</p>
           </a></div>
         <div class="items-box">
+          <div class="search-left">
+          </div>
           <div class="search">
             <h2>
               STORE
@@ -96,8 +127,11 @@
               찾아보세요
             </p>
             <form action="" class="search-form">
-
+              <label for="shop">지점명</label>
+              <input type="text" name="shop" class="shop">
+              <input type="submit" class="search-bt">
             </form>
+
           </div>
         </div>
       </div>

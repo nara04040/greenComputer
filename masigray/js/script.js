@@ -13,5 +13,20 @@ window.onload = function () {
             nextEl: '.sw-visual-next',
         }
     });
-
+    // items 슬라이드
+    new Swiper('.sw-items', {
+        loop: true,
+        spped: 800,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            prevEl: '.sw-items-prev',
+            nextEl: '.sw-items-next',
+        },
+        pagination: {
+            el: '.sw-items-pg'
+        }
+    });
 };
