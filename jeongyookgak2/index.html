@@ -10,6 +10,9 @@
     <link
         href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css"
+        integrity="sha512-3PN6gfRNZEX4YFyz+sIyTF6pGlQiryJu9NlGhu9LrLMQ7eDjNgudQoFDK3WSNAayeIKc6B8WXXpo4a7HqxjKwg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- jquery -->
 
@@ -50,47 +53,41 @@
         <section class="header">
             <div class="inner clearfix">
                 <div class="left-header">
-                    <div class="logo"></div>
+                    <div class="logo">
+                        <img src="images/logo.svg" alt="">
+                    </div>
                     <div class="gnb">
-                        <ul class="depth-1">
-                            <li><a href="#">쇼핑하기</a></li>
-                            <li><a href="#">쇼핑하기</a></li>
-                            <li><a href="#">쇼핑하기</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="right-header">
-                    <div class="sub-gnb"></div>
-                    <div class="icons">
-                        <span>cart</span>
-                        <span>hamberger</span>
-                    </div>
-                </div>
-                <!-- <a href="#" class="logo">
-                    <img src="images/logo.svg" alt="">
-                </a>
-                <div class="gnb">
-                    <div class="left-sub-gnb">
-                        <ul class="depth-1">
+                        <ul class="depth-1 clearfix">
                             <li><a href="#">쇼핑하기</a></li>
                             <li><a href="#">배송안내</a></li>
                             <li><a href="#">이벤트</a></li>
                         </ul>
                     </div>
-
-                    <div class="right-sub-gnb"></div>
                 </div>
-                <div class="cart-icon">
-                    <span class="material-icons-outlined">
-                        shopping_cart
-                    </span>
+                <div class="right-header clearfix">
+                    <div class="sub_gnb">
+                        <ul class="sub-depth-1 clearfix">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">고객센터</a></li>
+                            <span class="one-bar">|</span>
+                        </ul>
+                    </div>
+                    <div class="login clearfix">
+                        <ul class="login-list">
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">회원가입</a></li>
+                        </ul>
+                    </div>
+                    <div class="right-icons">
+                        <span class="material-icons-outlined">
+                            shopping_cart
+                        </span>
+                        <span class="material-icons-outlined">
+                            menu
+                        </span>
+                    </div>
                 </div>
-                <div class="hamberg-icon">
-                    <span class="material-icons-outlined">
-                        menu
-                    </span>
-                </div>
-            </div> -->
+            </div>
         </section>
         <!-- visual -->
         <section class="visual">
@@ -127,12 +124,51 @@
         <!-- best-items -->
         <section class="best-items">
             <div class="inner">
-                <h2>베스트 제품</h2>
+                <h2 class="items-title">정육각 베스트 제품</h2>
                 <div class="items-list-wrapper">
                     <ul class="best-items-list">
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>
+                            <a href="#">
+                                <div class="items-img-1"></div>
+                            </a>
+                            <h3>초신선 돼지 삼겹살 구이용</h3>
+                            <p>기준가 23,400원/600g</p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="items-img-2"></div>
+                            </a>
+                            <h3>초신선 돼지 삼겹살 구이용</h3>
+                            <p>기준가 23,400원/600g</p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="items-img-3"></div>
+                            </a>
+                            <h3>초신선 돼지 삼겹살 구이용</h3>
+                            <p>기준가 23,400원/600g</p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="items-img-4"></div>
+                            </a>
+                            <h3>초신선 돼지 삼겹살 구이용</h3>
+                            <p>기준가 23,400원/600g</p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="items-img-5"></div>
+                            </a>
+                            <h3>초신선 돼지 삼겹살 구이용</h3>
+                            <p>기준가 23,400원/600g</p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="items-img-6"></div>
+                            </a>
+                            <h3>초신선 돼지 삼겹살 구이용</h3>
+                            <p>기준가 23,400원/600g</p>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -147,24 +183,33 @@
         </section>
         <!-- footer -->
         <section class="footer">
-            <div class="f-top">
-                <div class="company-law"></div>
-                <div class="app-icons"></div>
-            </div>
-            <div class="f-bottom">
-                <div class="bottom-left">
-                    <div class="b-logo">
-                        <a href="#" class="b-logo-img"></a>
+            <div class="inner">
+                <div class="f-top">
+                    <div class="company-law">
+                        <span>인재채용</span>
+                        <span>이용약관</span>
+                        <span>개인정보처리방침</span>
                     </div>
-                    <div class="companey-addr">
+                    <div class="app-icons">
+                        <button>정육각앱설치</button>
+                        
                     </div>
                 </div>
-                <div class="bottom-right">
-                    <div class="sc">
-
+                <div class="f-bottom">
+                    <div class="bottom-left">
+                        <div class="b-logo">
+                            <a href="#" class="b-logo-img"></a>
+                        </div>
+                        <div class="companey-addr">
+                        </div>
                     </div>
-                    <div class="companey-email"></div>
-                    <div class="bottom-btn"></div>
+                    <div class="bottom-right">
+                        <div class="sc">
+
+                        </div>
+                        <div class="companey-email"></div>
+                        <div class="bottom-btn"></div>
+                    </div>
                 </div>
             </div>
         </section>

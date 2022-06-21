@@ -120,6 +120,152 @@ body {
     padding-top: 24px;
 }
 
+.left-header {
+    position: relative;
+    display: block;
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.logo {
+    position: relative;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin-right: 30px;
+}
+
+.logo img {
+    display: block;
+    width: 129px;
+    height: 48px;
+}
+
+.gnb {
+    position: relative;
+    display: block;
+    height: 100%;
+}
+
+.depth-1 {
+    position: relative;
+    display: block;
+    height: 100%;
+    margin-top: 18px;
+}
+
+.depth-1>li {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.depth-1 li a {
+    position: relative;
+    display: block;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 18px;
+    line-height: 18px;
+    color: #fff;
+}
+
+.right-header {
+    position: relative;
+    display: block;
+    width: 35%;
+    height: 100%;
+    float: right;
+}
+
+.sub_gnb {
+    position: relative;
+    display: block;
+    height: 100%;
+    float: left;
+}
+
+.sub-depth-1 {
+    position: relative;
+    display: block;
+    height: 100%;
+    height: 100%;
+    margin-top: 18px;
+}
+
+.sub-depth-1>li {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.sub-depth-1 li a {
+    position: relative;
+    display: block;
+    color: #fff;
+    padding-left: 5px;
+    padding-right: 10px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.one-bar {
+    position: absolute;
+    top: -8%;
+    right: -100%;
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.login {
+    position: relative;
+    display: block;
+    height: 100%;
+    margin-left: 20px;
+    float: left;
+}
+
+.login-list {
+    position: relative;
+    display: block;
+    height: 100%;
+    margin-top: 18px;
+}
+
+.login-list li {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.login-list li a {
+    position: relative;
+    display: block;
+    color: #fff;
+    padding-left: 5px;
+    padding-right: 10px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.right-icons {
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    float: left;
+}
+
+.right-icons span {
+    display: inline-block;
+    padding-left: 20px;
+    font-size: 30px;
+    color: #fff
+}
+
 /* visual */
 .visual {
     position: relative;
@@ -143,64 +289,76 @@ body {
     display: block;
     height: 300px;
 }
+
 .event .inner {
     height: 300px;
 }
+
 .sw-event {
     overflow: hidden;
 }
+
 .swiper-wrapper {
     position: relative;
     width: 50%;
     height: 100%;
     float: left;
 }
+
 .swiper {
     width: 600px;
     height: 100%;
 }
+
 .swiper-slide-1 {
     background: url(../images/202206_event_summer-pc-banner-2.png) no-repeat center;
     background-size: contain;
     width: 100%;
     height: 100%;
 }
+
 .swiper-slide-2 {
     background: url(../images/banner-slide2.png) no-repeat center;
     background-size: contain;
     width: 100%;
     height: 100%;
 }
+
 .swiper-slide-3 {
     background: url(../images/banner-slide3.png) no-repeat center;
     background-size: contain;
     width: 100%;
     height: 100%;
 }
+
 .swiper-slide-4 {
     background: url(../images/banner-slide4.png) no-repeat center;
     background-size: contain;
     width: 100%;
     height: 100%;
 }
+
 .swiper-slide-5 {
     background: url(../images/banner-slide5.png) no-repeat center;
     background-size: contain;
     width: 100%;
     height: 100%;
 }
+
 .swiper-slide-6 {
     background: url(../images/banner-slide6.png) no-repeat center;
     background-size: contain;
     width: 100%;
     height: 100%;
 }
+
 .swiper-slide-7 {
     background: url(../images/banner-slide7.png) no-repeat center;
     background-size: contain;
     width: 100%;
     height: 100%;
 }
+
 .event-free-coupon {
     position: absolute;
     top: 0;
@@ -212,8 +370,166 @@ body {
     height: 100%;
 
 }
+
 /* best-items */
+.best-items {
+    position: relative;
+    display: block;
+    height: 1200px;
+}
+
+.best-items h2 {
+    font-size: 40px;
+    padding: 20px;
+}
+
+.best-items .inner {
+    height: 100%;
+}
+
+.best-items h3 {
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.best-items p {
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+.items-list-wrapper {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+}
+
+.best-items-list {
+    position: relative;
+    display: block;
+}
+
+.best-items-list li {
+    position: relative;
+    display: block;
+    margin-right: 40px;
+    float: left;
+}
+
+.best-items-list li:nth-child(3n) {
+    margin-right: 0;
+}
+
+.best-items-list li a {
+    position: relative;
+    display: block;
+    width: 373px;
+    height: 410px;
+    background-color: #f9f7f8;
+}
+
+.items-img-1 {
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    left: 50%;
+    display: block;
+    background: url(../images/porkbelly-fresh-list.png) no-repeat center;
+    background-size: cover;
+    width: 280px;
+    height: 250px;
+}
+
+.items-img-2 {
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    left: 50%;
+    display: block;
+    background: url(../images/chickef-cut-list.png) no-repeat center;
+    background-size: cover;
+    width: 280px;
+    height: 250px;
+}
+
+.items-img-3 {
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    left: 50%;
+    display: block;
+    background: url(../images/porkcutlet-sirloin-list.png) no-repeat center;
+    background-size: cover;
+    width: 280px;
+    height: 250px;
+}
+
+.items-img-4 {
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    left: 50%;
+    display: block;
+    background: url(../images/egg-fresh-list.png) no-repeat center;
+    background-size: cover;
+    width: 280px;
+    height: 250px;
+}
+
+.items-img-5 {
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    left: 50%;
+    display: block;
+    background: url(../images/milk-fresh-list.png) no-repeat center;
+    background-size: cover;
+    width: 280px;
+    height: 250px;
+}
+
+.items-img-6 {
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    left: 50%;
+    display: block;
+    background: url(../images/baby-hanuround-bmix-list.png) no-repeat center;
+    background-size: cover;
+    width: 280px;
+    height: 250px;
+}
+
 
 /* ad */
-
+.ad{
+    position: relative;
+    display: block;
+    height: 220px;
+}
+.ad .inner {
+    height: 100%;
+}
+.ad-img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../images/banner_shop.96086e0.png) no-repeat center;
+    background-size: cover;
+}
 /* footer */
+.footer{
+    position: relative;
+    display: block;
+    margin-top: 200px;
+    height: 300px;
+    background-color: yellow;
+}
+.footer .inner {
+    height: 300px;
+}
+.f-top {
+    
+}
