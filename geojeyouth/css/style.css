@@ -159,7 +159,7 @@ body {
 /* 모바일 메뉴 내용 */
 .mb-wrap {
   position: fixed;
-  right: 0px;
+  right: -400px;
   top: 0;
   display: block;
   width: 400px;
@@ -221,17 +221,22 @@ body {
   width: 100%;
   height: 60px;
   overflow: hidden;
-
+  transition: all 0.5s;
 }
 
 .mb-mainmenu {
   position: relative;
   display: block;
   font-size: 18px;
-  color: #2578de;
+  /* color: #2578de; */
+  color: #444;
   line-height: 60px;
   background-color: #fff;
   padding: 0 20px;
+}
+
+.mb-mainmenu-open {
+  color: #2578de;
 }
 
 .mb-submenu {
@@ -481,7 +486,17 @@ body {
     display: block;
   }
 
+  .header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+  }
+
   .header .inner {
+    width: 97%;
     height: 70px;
   }
 

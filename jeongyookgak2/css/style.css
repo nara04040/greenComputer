@@ -503,14 +503,16 @@ body {
 
 
 /* ad */
-.ad{
+.ad {
     position: relative;
     display: block;
     height: 220px;
 }
+
 .ad .inner {
     height: 100%;
 }
+
 .ad-img {
     position: relative;
     display: block;
@@ -519,17 +521,69 @@ body {
     background: url(../images/banner_shop.96086e0.png) no-repeat center;
     background-size: cover;
 }
+
 /* footer */
-.footer{
+.footer {
     position: relative;
     display: block;
     margin-top: 200px;
     height: 300px;
+    border-top: 1px solid #eee;
     background-color: yellow;
 }
+
 .footer .inner {
     height: 300px;
 }
+
 .f-top {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 60px;
+    background-color: #e23000;
+}
+
+.company-law {
+    position: relative;
+    display: block;
+    height: 100%;
+    float: left;
+}
+
+.company-law span {
+    position: relative;
+    display: block;
+    height: 100%;
+    line-height: 60px;
+    padding: 0 10px;
+    font-size: 14px;
+    float: left;
+}
+
+.app-icons {
+    position: relative;
+    display: block;
+    float: right;
+    padding: 10px;
+}
+.app-icons button {
+    float: left;
     
+}
+.kakao-icon {
+    display: block;
+    background: url(../images/kakao.svg) no-repeat center;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    float: left;
+}
+.ins-icon {
+    display: block;
+    background: url(../images/ins.svg) no-repeat center;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    float: left;
 }
