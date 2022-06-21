@@ -2,6 +2,28 @@
 
 // jquery 를 이용(html, css, js)
 $(document).ready(function () {
+  // 전체메뉴보기
+  // .more-wrap을 저장하자
+  let more_wrap = $('.more-wrap');
+  // .member-more 저장해서 활용
+  let member_more = $('.member-more');
+  member_more.click(function () {
+    more_wrap.fadeIn(300);
+  });
+  // .more-div-close 를 활용
+  let more_div_close = $('.more-div-close');
+  more_div_close.click(function () {
+    more_wrap.fadeOut(300)
+  })
+  // 더보기 메뉴 배경을 클릭하면 사라지기
+  more_wrap.click(function(){
+    //클릭된 신호를 전달
+    more_wrap.fadeOut(300)
+  });
+  $('.more-div').click(function(event){
+    event.stopPropagation()
+  })
+
   // 모바일 메뉴 기능b
   // .mb-bt 를 저장해서 활용하자.
   $('.mb-bt').click(function (e) {
@@ -61,7 +83,16 @@ $(document).ready(function () {
       }
     });
   });
-
+  // 모바일 메뉴 배경 클릭시 사라짐.
+  let mb_dim = $('.mb-dim');
+  mb_dim.click(function(){
+    // 모바일 버튼 기능 초기화
+    $('.mb-bt').removeClass('mb-bt-open');
+    $('.mb-dim').removeClass('mb-dim-open');
+    $('.mb-wrap').removeClass('mb-wrap-open');
+    $('.mb-menu>li').height(60);
+    $('.mb-mainmenu').removeClass('mb-mainmenu-open');
+  })
 });
 
 
