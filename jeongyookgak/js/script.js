@@ -1,5 +1,12 @@
 window.onload = function () {
-    let sw_banner = new Swiper(".sw-banner", {
+    new Swiper('.sw-event', {
+        // loop: true,
+        // autoplay: {
+        //     delay: 2500,
+        //     disableOnInteraction: false,
+        // },
+        // speed: 1000,
+        // 페이지 버튼, 화살표
         pagination: {
             el: ".swiper-pagination",
             type: "fraction",
@@ -8,5 +15,6 @@ window.onload = function () {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
-    })
-}
+    });
+
+};
